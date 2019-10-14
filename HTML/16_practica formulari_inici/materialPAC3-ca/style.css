@@ -1,0 +1,18 @@
+/* --------------RESET----------------- */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+main{
+    width: 100%;
+    background-color: bisque;
+    padding: 20px;
+    position: relative;
+}
+
+img{
+    width: 20%;
+    padding: 10px;
+    display:block;
+}

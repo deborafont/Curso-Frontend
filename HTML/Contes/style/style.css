@@ -1,0 +1,54 @@
+
+
+
+
+
+/*---------------------------------ESTRUCTURA-----------------------------*/
+
+
+
+
+/*----------------------------------TIPOGRAFIA----------------------------*/
+
+
+
+
+
+
+/*----------------------------------ESTETICA----------------------------*/
+
+
+h1{
+    background-color: rgba(167, 243, 167, 0.699);
+    text-align: center
+}
+
+html{
+    /* background-color: rgba(255, 228, 196, 0.623) */
+    background-image: url(/imatges/el-mundo.png);
+
+img{
+    max-width
+}
+
+a:link {
+    color: #FF0000;
+    text-decoration: underline;
+}
+
+a:visited {
+        color: rgb(13, 14, 13);
+        text-decoration: underline;
+}
+
+a:hover {
+    color: #FF00FF;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #0000FF;
+    text-decoration: underline;
+  }
+}
+/*----------------------------------RESPONSIUS----------------------------*/

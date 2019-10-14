@@ -1,0 +1,24 @@
+Sintaxi
+/*  
+Sintaxi CSS
+|<--------------------- Regla CSS ---------------------->|
+|
+|                 |<------------ Declaració ------------>|
+|                 |                                      |
+|<- Selector -> |   |<- Propietat ->|   |<- Valor ->|    |
+|               |   |               |   |           |    |
+|       p         {       color       :     orange    ;  }
+*/
+/* . Sintaxi CSS (resum) */
+
+
+p {  color : orange ; }
+
+
+/* dos declaracions en la mateixa regla */
+p {
+      color : pink ; 
+
+      /* Mida del text */
+      font-size: 20px 
+}

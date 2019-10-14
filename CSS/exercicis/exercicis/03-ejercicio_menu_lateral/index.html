@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+
+<html lang="la">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Gaudeix del paisatge...</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    
+<style>
+
+/***-------------- Estructura --------------***/
+
+/* dimensionamos los enunciados en el que tenemoslas imagenes */
+h1, h2  {  padding: 100px 0; }
+
+/* fijamos el navegador y lo posicionamos a la derecha */
+nav {
+    position: fixed;
+    top: 30%;
+    right: 1rem;
+}
+
+/* medida de los botones */
+li {
+    width:1rem;
+    height:1rem;
+    margin:1rem;
+    padding: 0.8rem;
+}
+
+p { 
+    max-width: 600px;
+    margin: 2rem auto;
+}
+
+p.entradeta { margin: 2rem auto; }
+    
+footer p{ 
+    padding: 2rem 0; 
+    margin: 0 auto; 
+}    
+    
+/***-------------- Tipografia --------------***/
+
+/* centramos y ponemos un tamaño de letra en todo el documento */
+html { 
+    font-size: 16px; 
+    text-align: center; 
+    font-family: Helvetica, Arial, serif;
+}
+
+h1 { 
+    font-size: 4rem; 
+    /* el interliniado siempre tiene que ser el mismo tamaño que el tamaño de la letra */
+    line-height: 4rem;
+}
+
+/* tamaño de la letra de los h2 */
+h2 { font-size: 3rem; }
+
+/* interlineado y tamaño de la letra de los botones */
+li { 
+    line-height: 1rem;
+    font-size: 1.2rem;
+}  
+
+/* ponemos medida a la letra, inrlineado y justificamos los parrafos */
+p {
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-align: justify;
+}
+
+/* para remarcar las letras de los enunciados */
+h1, h2  { font-weight: bold; }
+
+/* centramos y le damos tamaño a la letra y al interlineado de los parrafos de las entradilla */
+p.entradeta {
+    font-size: 1.8rem;
+    line-height: 2rem;
+    text-align: center;
+    }
+
+/* centramos el texto del pie */
+footer p { text-align:center; }
+    
+/***-------------- Estetica --------------***/
+    
+/* desplazamiento suave del scroll de la pagina */
+html { scroll-behavior: smooth; }
+    
+/* fijamos la imagen para que se quede clavada, pintamos las letras en blanco */
+h1, h2   { 
+    color:#ffffff;
+    background-attachment: fixed;
+    background-size: cover;
+    }
+/* imagen de la cabecera */
+h1 { background-image: url(panoramas/pano02.jpg); }
+
+/* las imagenes las ponemos en el h2 */
+div:nth-child(1) h2 { background-image: url(panoramas/pano08.jpg); }
+div:nth-child(2) h2 { background-image: url(panoramas/pano03.jpg); }
+div:nth-child(3) h2 { background-image: url(panoramas/pano04.jpg); }
+div:nth-child(4) h2 { background-image: url(panoramas/pano05.jpg); }
+div:nth-child(5) h2 { background-image: url(panoramas/pano06.jpg); }
+div:nth-child(6) h2 { background-image: url(panoramas/pano07.jpg); }
+
+/* le damos color a los botones y le ponemos un borde */
+li { 
+    background-color: orange;
+    border: 2px solid #fff; 
+}
+
+/* cambiamos el color de los enlaces y le quitamos el subrayado */
+a { 
+    color: #000; 
+    text-decoration: none;
+}
+
+/* ponemos color a los parrafos de la entrada */
+p.entradeta { color: grey; }
+
+/* le damos color a las lestras y fonde del pie */
+footer { 
+    color: #fff; 
+    background:#333; 
+}
+
+/* ponemos borde a las letras de los enunciados para que cuando pases por un trozo de la imagen blanco se leible igualmente */
+.texto-borde {
+  -webkit-text-stroke: 1px black;
+  color: white; 
+}
+/* ponemos sombra a las letras de los enunciados para que cuando pases por un trozo de la imagen blanco se leible igualmente */
+.texto-sombra{
+    text-shadow: 2px 2px 4px #000000;
+}
+    
+</style>
+
+</head>
+
+<body>
+<header id="inici">
+    <h1>Gaudeix del paisatge...</h1>
+<p class="entradeta">In eleifend dui velit, vestibulum venenatis nisl consectetur nec. Sed ultricies tincidunt lorem eget viverra. Fusce venenatis metus ac ex blandit ultricies. Mauris ornare purus non nisl congue, convallis pellentesque nulla placerat. </p>
+</header>
+<nav>
+<ul>
+    <li><a href="#paisatge1">1</a></li>
+    <li><a href="#paisatge2">2</a></li>
+    <li><a href="#paisatge3">3</a></li>
+    <li><a href="#paisatge4">4</a></li>
+    <li><a href="#paisatge5">5</a></li>
+    <li><a href="#paisatge6">6</a></li>
+</ul>
+</nav>
+<main>
+    <div id="paisatge1">
+        <h2 class="texto-borde">Un mar de núvols</h2>
+        <p class="entradeta">Lorem ipsum dolor sit amet, elit consectetur adipiscing. </p>
+        <p> Atención clínica hasta que invertimos un bloqueo mucho. No se graduó de bienes raíces, el fútbol arco aplicación de la ley, nibh fútbol. Negocio y el arco del caballo. Mañana invertir capa de dolor triste de fútbol cualquier terreno blando. Sin embargo, macro ipsum luto fútbol Massa, por favor, no varió. Chatear como un desarrollo propaganda diámetro de baloncesto. Fuera de la malesuada nibh Donec vehicula no, no es el precio de la televisión interdum sollicitudin ante. A menos que un lacus lectus tincidunt lorem, no es la puerta del dicho Lacinia. tecnología de chat de bienes raíces, el fútbol maquillaje dúos, Sem. Fusce sit amet Tellus eget lorem vulputate condimentum ac muy contento con él. Varias montañas clínicos Penatibus Super Bowl al instante.</p>
+    </div>
+    
+    <div id="paisatge2">
+        <h2 class="texto-sombra">Happy valley</h2>
+        <p class="entradeta">Commodo blandit velita ac lorem lacus.</p>
+        <p>Es importante fútbol clínica, zanahorias desarrolladores de león. Hasta ahora, no como clientes que financian aplicación de la ley en la cuadrícula. Presente condimentum Tellus sapiens, ut hendrerit turpis interdum ac. La fabricación de los Estados Unidos, pero se moverá desde el precio, el baloncesto era la risa. Vivamus auctor, nisi nec porttitor dignissim, que del tacto se aplica, vitae molestie sit amet purus por ahí es. Vestibulum viverra tortor vitae dignissim interdum sollicitudin ante. A veces malesuada hambre y en la primera prueba. Clinical fugas capa sit. Por favor, retransmitir por ciento de cartón, pero establecer la necesidad de puerta. Fusce sagittis, ipsum SED euismod dapibus, el dolor de los extremos de los jugadores de base, ella quiere a los niveles de precios de la vida misma. Juegos de azar en el botón de financiación, y la carga en sí.</p>
+    </div>
+    
+    <div id="paisatge3">
+        <h2>A la vora del Mar de Photoshop</h2>
+        <p class="entradeta">Adipiscing fin de semana valle.</p>
+        <p>Clínica previamente libres, lo que facilita fin de semana o, la vida es siempre bueno. Un león, eran, incapaces de mauris en dolor fringilla ut vitae. En un querido puerta, miembros del desarrollador, ponen grandes. Ahora los miembros de la UE, por lo que los consumidores. Vestibulum ENIM lorem, añadir crema o en ante de ca AC, embarazada tempor sem. Nibh sentarse mucho en el momento de la atención es necesario chatear feo. Mecenas vulputate un gran peinado, y de la vida en el valle, las golosinas. Desde el maquillaje se efectúa a una Fusce que es mejor que cualquier hombre deseaba. Y Estados Unidos necesitará un poco de risa et. El estrés región del valle lorem, capa de flechas propaganda del pudín. Desafortunadamente, él no pidió urna venenatis luctus. No hay flechas dirigidas odio y Ullamcorper necesidad elemento de odio.</p>
+    </div>
+    
+    <div id="paisatge4">
+        <h2 class="texto-sombra">Hi ha llocs al món que son espacials</h2>
+        <p class="entradeta">Eneas veces desarrolladora de recetas de fútbol ecológico.</p>
+        <p>Sin embargo, ninguna de diámetro valle. Sin embargo, un smartphone de fútbol región de fútbol de larga duración sentada nibh. Chatear vehículos innovadores de bienes raíces. Cras urna ligula, interdum sea como sed, pulvinar consectetuer adipiscing elit. Japón desarrollador que puede vivir la nutrición libres y antioxidantes Ullamcorper felis. Vestibulum bibendum ultricies tortor, pulvinar eget no siempre el resultado. Ahora quiere que el ordenador. Pero la necesidad de atención y el conjunto al aire libre. los libros de texto en vivo en masa, la salsa de chile de la necesidad, en el botón de conveniencia. Algunos vehículos son que no se dirige. Sin miedo por ese motivo, la Oficina, pero, si no el más grande. De hecho, pero es a partir de proteínas, proteínas, una eleifend, ligula consequat. Pero para ella no es ni mauris tincidunt interdum sollicitudin ante. Eu fútbol reposar por cualquier fuga.</p>
+    </div>
+    
+     <div id="paisatge5">
+        <h2>El foc, l'aigua i el vent són gent important</h2>
+        <p class="entradeta">Nullam pretium tellus in sagittis gravida.</p>
+        <p>De hecho, era la risa de hendrerit. Desafortunadamente, no hay una copa de fútbol de fútbol a la vez. Beber mucho ahora teme una olla en todo el país. No Temperatura de avión maquillaje, los miembros de los medios de vida ecológico. Curabitur convallis augue ut Justo amet, tincidunt no blandit. La refinanciación. Ahora suave y libre del valle, pero la tarea de voleibol libre. Módulo Variación lo envíen dúos apuntado. Pero dúos mañana Justo toma antioxidantes. No hay ningún problema de competencia.</p>
+    </div>
+    
+        <div id="paisatge6">
+        <h2>Un bonic camp de gira-sols</h2>
+        <p class="entradeta">Esta metus congue sit amet, tincidunt suscipit Massa pellentesque ID.</p>
+        <p>Hasta el baloncesto Playstation, mejorada macro no está embarazada libre. turpis ac ornare en erat NEC Duis augue aliquet a. Fútbol será deducible o simplemente el chocolate. desarrolladores de fútbol, clientes y bloqueo de la puerta, se graduaron de fermentación libre de temores de que ultricies la necesidad tanque feo. Quisque urna Massa, proteína y térmica sed, pharetra eget dolor. El estrés conveniencia de casino capa. Vestibulum dúos graduó. Mecenas tincidunt ut augue, nisl feugiat nec, los extremos del cacahuete. Com a veces se deje caer, embarazada sentarse relajarse. DUIs quis varius, Ullamcorper Identificación porttitor. plátanos tarea lorem de ingresos de la televisión gratis. Pero si no hubiera mañana, y que una gran cantidad de niños.</p>
+    </div>
+
+</main>
+
+<footer>
+    <p>конец</p>
+</footer>
+</body>
+</html>

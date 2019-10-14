@@ -1,0 +1,95 @@
+div{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: blue;
+    text-align: center;
+    font-weight: bolder;
+    position:relative;
+    width: 120px;
+    height: 50px;
+    margin: 30px 0 0 10px;
+    color:#fff;
+
+}
+
+p{
+    padding-top: 15px;
+}
+
+/* animació amb from i to */
+/* .caja:hover{
+    animation: colorear 1s;
+}
+
+@keyframes colorear{ 
+    from{background-color: blue;}
+    to{background-color: rebeccapurple;}
+} */
+
+.caja:hover{
+    /* lo que dura cada cambio */
+    animation: bounceIn 2s;
+    /* veces que se repite la animacion */
+    animation-iteration-count: infinite;
+}
+
+@keyframes colorear{ 
+    0%{background-color: blue;}
+    25%{background-color: rebeccapurple;}
+    75%{background-color: brown;}
+    100%{background-color: darkmagenta;}
+}
+
+@keyframes bounceIn {
+    from,
+    20%,
+    40%,
+    60%,
+    80%,
+    to {
+      -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+      animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+  
+    0% {
+      opacity: 0;
+      -webkit-transform: scale3d(0.3, 0.3, 0.3);
+      transform: scale3d(0.3, 0.3, 0.3);
+    }
+  
+    20% {
+      -webkit-transform: scale3d(1.1, 1.1, 1.1);
+      transform: scale3d(1.1, 1.1, 1.1);
+    }
+  
+    40% {
+      -webkit-transform: scale3d(0.9, 0.9, 0.9);
+      transform: scale3d(0.9, 0.9, 0.9);
+    }
+  
+    60% {
+      opacity: 1;
+      -webkit-transform: scale3d(1.03, 1.03, 1.03);
+      transform: scale3d(1.03, 1.03, 1.03);
+    }
+  
+    80% {
+      -webkit-transform: scale3d(0.97, 0.97, 0.97);
+      transform: scale3d(0.97, 0.97, 0.97);
+    }
+  
+    to {
+      opacity: 1;
+      -webkit-transform: scale3d(1, 1, 1);
+      transform: scale3d(1, 1, 1);
+    }
+  }
+/*
+animation-name: el nom del keyframe
+
+animation-duration: temps total de l'animació
+
+animation-iteration-count: Número de repeticions
+
+animation-delay: retard de l'animació 
+
+*/

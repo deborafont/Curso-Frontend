@@ -1,0 +1,86 @@
+@charset "utf-8";
+
+#principal{
+/*float indica que el siguiente elemento se posicione a su lado*/
+ /*Establecer ancho de la primera columna: de 580 px*/
+ /* si no se pone una anchura el otro elemento no puede flotar a su lado */
+width: 580px;
+float: left;
+}
+
+#lateral{
+ /* Aplicar margen izquierdo a 600,
+  padding a 15 y
+   backgroung a  #e1cdff */
+   margin-left: 600px;
+   padding: 15px;
+   /* si queremos que el color de fondo solo afecte al contenedor hay que ponerle unos limites en la anchura y padding */
+   background-color: #15CDA8;
+}
+
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url(/images/fondo-cuerpo.png);
+    background-repeat: repeat-x;
+    background-position: top;
+    /* una manera de centrar el texto */
+    width: 800px;
+    margin: 0 auto;
+    background-color:  #cdb3f5 ;
+    /* ponemos un margen superior para que no pise la imagen de la hierva */
+    margin-top: 135px;
+}
+
+h1{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 3rem;
+    
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: rgb(20, 110, 110);
+    /* le damos margen arriba y abajo de los enunciados H2 */
+    margin: 10px 0;
+}
+
+
+#principal h2{
+    /* ponemos un padding izquierdo para que las lestras no pisen la imagen de la flor */
+    padding-left: 45px;
+   border-bottom: 4px rgb(20, 110, 110) solid;
+   background-image: url(/images/flor-transparente.png);
+   background-size: contain;
+   background-repeat: no-repeat;
+   /* para mover la flor un poco para arriba y no quede tan pegada. Valor negativo para subirla, positivo para bajarla */
+   background-position-y: -5px;
+}
+
+
+#principal p{
+  font-family: 'Times New Roman', Times, serif;
+  /* separacion entre lineas */
+  line-height: 1.5rem;
+  /* centramos los parrafos dandoles un margenes*/
+  margin:5px 50px 10px 50px;
+  text-align: justify;
+}
+
+
+.introduccion{
+    font-size: 2.2rem;
+    font-family:  sans-serif;
+    /* un # es mas importante que una class. Eso hace que las caracteristicas de id pisan en algunas ocasiones a las de la class. Para evitar esto podemos poner el !important. */
+    margin-left: 0 !important;
+    color:grey;
+   
+}
+
+
+
+
+
+ /* ojo a la imagen de fondo - ruta*/
+ /*background: violet url(../images/fondo-cuerpo.png) repeat-x;*/
+

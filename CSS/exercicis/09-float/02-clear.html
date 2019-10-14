@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Clear</title>
+
+    <style>
+
+    /* 03esto es un contenedor que contiene las cajas que esten flotando. Con el overflow en auto */
+    .contenidor{
+        background-color: #f1f1f1;
+        overflow: auto;
+        padding: 10px;
+
+    }
+
+    .esquerra{
+        background-color:orange;
+        float: left;
+        width: 70%;
+        padding: 10px;
+        box-sizing: border-box;
+        max-height: 300px;
+
+    }
+    .dreta{
+        background-color: pink;
+        float: left;
+        width: 30%;
+        padding: 10px;
+        box-sizing: border-box;
+        max-height: 300px;
+    }
+    .peu{
+        background-color: skyblue;
+        padding: 10px;
+        box-sizing: border-box;
+        /* deja de flotar al lado del contenedor de la derecha */
+        clear: left;
+    }
+
+    </style>
+</head>
+<body>
+
+    <h1>Clear</h1>
+        <div class="contenidor">
+
+            <div class="esquerra">
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere repellendus culpa, expedita nulla perferendis quam, ipsum aut, voluptas obcaecati sunt vitae voluptatibus earum omnis quos? Maxime alias reiciendis quaerat?</p>
+
+        </div><div class="dreta">
+
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis in officia modi amet dolores eveniet unde. Facere laboriosam molestias debitis similique, delectus quos asperiores sequi, sapiente nihil voluptate, voluptatibus harum.</p>
+
+        </div><div class="peu">
+
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit, dignissimos molestias quod modi saepe excepturi quam minus soluta quasi repudiandae repellat harum eius dolores, aperiam dicta pariatur quis. Optio.</p>
+        </div>
+
+</body>
+</html>

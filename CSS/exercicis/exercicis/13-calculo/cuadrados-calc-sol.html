@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      
+    <title>Calc + Grid</title>  
+    <meta charset="UTF-8"> 
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+      
+      <style>
+      
+
+:root { --base: 2vh; }
+
+/* 
+          * {outline: 1px solid pink;}
+*/      
+          
+/* ESTRUCTURA */
+          
+          
+main {  
+
+	display: grid; 
+	grid-template-columns: auto auto; 
+	grid-template-rows: calc( var(--base) * 21 ) calc( var(--base) * 10 ) calc( var(--base) * 10 );
+    width: calc( var(--base) * 21 );
+    margin: var(--base) auto auto auto;
+    
+    grid-gap: var(--base);
+}
+
+    .gran { 
+       grid-area: 1 / 1 / 2/ 3;
+       height:  calc( var(--base) * 21 );
+          }
+
+          .petit { background: green;
+              
+          
+          }
+          
+/***** TIPOGRAFIA *****/
+
+
+
+/***** ESTETICA *****/
+
+main {background: orange;}
+          
+        
+          .gran, .petit {background: green; }
+
+          
+</style>
+      
+</head>
+
+ <body>
+    <main> 
+      <div class="gran"></div>
+      <div class="petit"></div>
+      <div class="petit"></div>
+      <div class="petit"></div>
+      <div class="petit"></div>
+     </main>
+
+  </body>  
+</html>

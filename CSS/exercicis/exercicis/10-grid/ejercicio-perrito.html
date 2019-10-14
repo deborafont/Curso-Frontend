@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio perritos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+
+    <style>
+        *{
+            outline: 1px solid orange;
+        }
+
+        body{
+            background-color: grey;
+        }
+
+        /* ----------------------------navegador------------------------------- */
+        header{
+            background-color: white;
+        }
+
+        .cabecera{
+            max-width: 1200px;
+            display: flex;
+            margin:0 auto;
+            justify-content: space-between;
+            padding: 10px;
+        }
+        .logo{
+            width: 20px;
+            height: 20px;
+        }
+
+        ul{
+            text-decoration: none;
+        }
+
+        form, .menu a,input{
+            display:none;
+            }
+
+        /* --------------------------principal---------------------------- */ 
+        
+        .principal{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 10px;
+            display: grid;
+            grid-template-columns: repeat (4, 1fr);
+            grid-template-rows: repeat (4, 1fr);
+        }
+
+        section *{
+            padding: 1rem;
+        }
+
+        img{
+            width: 100%;
+        }
+
+       .principal div:nth-child(1){ 
+           background-image: url("/img/dog.jpg");
+           background-size: cover;
+           height: 200px;
+        }
+       .principal div:nth-child(2) {background-color:pink;}
+       .principal div:nth-child(3) { background-color:blueviolet;}
+       .principal div:nth-child(4) { 
+            background-image: url("/img/nature.jpg");
+            height: 200px;
+            background-size: cover;
+            grid-area: 
+       }
+        .principal div:nth-child(5){}
+        .principal div:nth-child(6) { 
+           background-image:url("/img/spray.jpg");
+           height: 200px;
+           background-size: cover;
+           }
+
+        /* --------------------------media queries-------------------------- */
+
+        @media (min-width: 768px) {
+            .principal div:nth-child(1){
+                grid-area: 1/1/3/4;
+            }
+
+            .principal div:nth-child(2){}
+
+            .principal div:nth-child(3){}
+
+            .principal div:nth-child(4){}
+
+            .principal div:nth-child(5){
+                grid-area: 4/4/2/5
+            }
+
+
+
+
+        }
+        
+    </style>
+
+</head> 
+<body>
+    
+    <header>
+        <div class="cabecera">
+            <img class="logo" src="/img/logo-rosa-vientos.png" alt="">
+
+            <nav id="navegador">
+                    <!-- [THE HAMBURGER] -->
+                <label for="hamburguesa">&#9776;</label>
+                <input type="checkbox" id="hamburguersa"/>
+          
+                <ul class="menu">
+                    <li><a href="">Last news</a></li>
+                    <li><a href="">Featured news</a></li>
+                    <li><a href="">Editorials</a></li>
+                    <li><a href="">Special edition</a></li>
+                </ul>
+            </nav>
+
+            <form>
+                <input type="text" placeholder="search" name="firstname">
+            </form>
+        </div>
+
+    </header>
+
+    <section class="principal">
+ 
+            <div><h1>una pregunta kike</h1></div>
+
+            <div><h3>No hay preguntas</h3></div>
+
+            <div><h3>No hay preguntas</h3></div>
+            
+            <div><h2>Ya no estoy para preguntas, ayer perdí 30mil cabellos con vosotros</h2></div>
+
+            <div><h3>No hay preguntas</h3></div>
+            
+            <div><p>Ya no estoy para preguntas, ayer perdí 30mil cabellos con vosotros</p></div>
+        </div>
+    </section>
+
+</body>
+</html>

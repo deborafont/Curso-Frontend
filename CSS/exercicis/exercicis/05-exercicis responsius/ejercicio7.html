@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio7</title>
+
+    <style>
+
+        div{
+            width: 100vh;
+        }
+
+        .mobil{
+            background-color: red;
+        }
+        
+        .tablet{
+            background-color: green; 
+        }
+
+        .portatil{
+            background-color:yellow;
+        }
+
+        .escritorio{
+            background-color:blue;
+        }
+    /* ------------------------------MEDIA QUERIES--------------------------------- */
+        /* si fem el mquery amb max-width començarem per la pantalla mes gran a la mes petita */
+
+        /* amaguem tots el elements */
+    .mobil,.tablet, .portatil, .escritorio{display: none;}
+
+        /* quan la pantalla es mes gran que 1200px visualitzem el block de l'escriptori */
+    @media (min-width: 1200px){
+        .escritorio{display: inline-block}
+    }
+
+        /* quan la pantalla esta entre 993px-1200px visualitzem el block de portatil  */
+    @media (max-width: 1200px) { 
+        .escritorio{display: none;}
+        .portatil{display: inline-block;}
+    } 
+
+        /* quan la pantalla esta entre 769-992px visualitzem el block de la tablet   */
+    @media (max-width: 992px) { 
+        .portatil {display: none;}
+        .tablet{display: inline-block;} 
+    } 
+
+        /* quan la pantalla es mes patites que 768px visualitzem el mobil  */
+    @media (max-width: 768px) { 
+        .tablet{display: none;}
+        .mobil{display: inline-block;}
+    }
+
+    </style>
+
+</head>
+<body>
+
+    <div class="mobil">
+        <p>mobil</p>
+    </div>
+
+    <div class="tablet">
+        <p>tablet</p>
+    </div>
+
+    <div class="portatil">
+        <p>portatil</p>
+    </div>
+
+    <div class="escritorio">
+        <p>escritorio</p>
+    </div>
+
+</body>
+</html>

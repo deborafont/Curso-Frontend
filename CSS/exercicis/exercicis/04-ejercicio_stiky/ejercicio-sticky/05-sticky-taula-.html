@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Imatges i textos amb sticky</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    
+<style>
+
+
+/***-------------- Estructura --------------***/
+   
+header { padding: 100px 0; }
+
+/* visualitzem el main com si fos una tabla */
+main { display: table; }
+
+/* visualitzem l'article com si fos una fila */
+article { display: table-row; }
+
+/* visualitzem els divs com si fos una cel·les i li donem 50% d'amplada*/   
+article div { display: table-cell; width: 50%; vertical-align: top;}
+
+p { padding: 3rem;}
+
+/* canviant el vertical-align treiem l'espai entre imatges */ 
+img { width: 100%; vertical-align: top;}
+
+/*  Codi per que el paragraf sigui esticky
+    Sembla poc, pero en realitat esta lligat al resta d'elements
+    Si ho ficas junt amb contenidors floats no funciona.
+*/
+
+.texto p { position: sticky; top: 0; }
+
+ 
+
+    
+/***-------------- Tipografia --------------***/
+
+html { font-size: 16px; }
+    
+h1, footer { text-align: center; font-size: 3rem;}
+
+    
+p { 
+    font-size: 1.4rem; 
+    line-height:1.6rem; 
+
+    }
+
+/* text esquerra */    
+article:nth-child(2n) p  { color: #fff;     text-align: right; }
+article:nth-child(2n) { background: black; }    
+
+/***-------------- Estetica --------------***/
+    
+
+header, footer { background: #C60909; color: #fff; }     
+
+
+    
+</style>
+
+</head>
+    
+<body>
+    <header>
+        <h1>Imatges i textos amb sticky</h1>
+    </header>
+    
+    <main>
+        
+        <article>
+            <div  class="fotos">
+                    <img src="panoramas/pano01.jpg">
+                    <img src="panoramas/pano02.jpg">
+                    <img src="panoramas/pano03.jpg">
+                    <img src="panoramas/pano04.jpg">
+                    <img src="panoramas/pano05.jpg">
+                    <img src="panoramas/pano06.jpg">
+                    <img src="panoramas/pano07.jpg">
+                    <img src="panoramas/pano08.jpg">
+            </div>
+            
+            <div class="texto">
+                <p>Aquest text descriu les imtatges que tinc a l'esquerra.<br>No és gaire pràctic si desapareix i jo segueixo veient fotos.</p>
+            </div >
+            
+        </article>
+        
+        <article>
+            <div class="texto">
+                <p>Aquest text descriu les imtatges que tinc a la dreta.<br>No és gaire pràctic si desapareix i jo segueixo veient fotos.</p>
+            </div >
+            <div  class="fotos">
+                    <img src="panoramas/pano01.jpg">
+                    <img src="panoramas/pano02.jpg">
+                    <img src="panoramas/pano03.jpg">
+                    <img src="panoramas/pano04.jpg">
+                    <img src="panoramas/pano05.jpg">
+                    <img src="panoramas/pano06.jpg">
+                    <img src="panoramas/pano07.jpg">
+                    <img src="panoramas/pano08.jpg">
+            </div>
+        </article> 
+
+        <article>
+            <div  class="fotos">
+                    <img src="panoramas/pano01.jpg">
+                    <img src="panoramas/pano02.jpg">
+                    <img src="panoramas/pano03.jpg">
+                    <img src="panoramas/pano04.jpg">
+                    <img src="panoramas/pano05.jpg">
+                    <img src="panoramas/pano06.jpg">
+                    <img src="panoramas/pano07.jpg">
+                    <img src="panoramas/pano08.jpg">
+            </div>
+            
+            <div class="texto">
+                <p>Aquest text descriu les imtatges que tinc a l'esquerra.<br>No és gaire pràctic si desapareix i jo segueixo veient fotos.</p>
+            </div >
+            
+        </article>
+        
+        <article>
+            <div class="texto">
+                <p>Aquest text descriu les imtatges que tinc a la dreta.<br>No és gaire pràctic si desapareix i jo segueixo veient fotos.</p>
+            </div >
+            <div  class="fotos">
+                    <img src="panoramas/pano01.jpg">
+                    <img src="panoramas/pano02.jpg">
+                    <img src="panoramas/pano03.jpg">
+                    <img src="panoramas/pano04.jpg">
+                    <img src="panoramas/pano05.jpg">
+                    <img src="panoramas/pano06.jpg">
+                    <img src="panoramas/pano07.jpg">
+                    <img src="panoramas/pano08.jpg">
+            </div>
+        
+        </article> 
+        
+    </main>
+
+    <footer>
+        <p>Footer</p>
+    </footer>
+</body>
+</html>

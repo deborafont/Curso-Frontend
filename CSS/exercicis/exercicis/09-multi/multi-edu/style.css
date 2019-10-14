@@ -1,0 +1,124 @@
+/*
+RESET
+https://cdnjs.com/libraries/meyer-reset
+
+IL·LUSTRACIONS
+https://etc.usf.edu/clipart/
+
+https://www.oldbookillustrations.com/
+
+*/
+
+/***-------------- Estructura --------------***/
+
+header,
+nav,
+main,
+aside,
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding: 30px 50px;
+}
+
+img{
+    width: 400px;
+    margin: 20px;
+    mix-blend-mode: multiply;
+}
+
+.caixa{
+    padding: 30px;
+    margin: 30px 0px;
+}
+
+.caixa:first-child{
+    /* margin-top: 0px; */
+}
+
+.peufoto::first-letter{
+    float: left;
+    margin: -8px   10px   -10px   0;
+}
+
+p a{
+    display: inline-block;
+    width: 100%;
+    margin: 20px 0px;
+    margin-bottom: 0px;
+}
+ 
+/***-------------- Tipografia --------------***/
+
+.titol, .subtitol, .subtitol2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.titol{
+    text-align: center;
+    font-size: 2.6rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 3rem;
+}
+
+.subtitol{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    line-height: 2rem;
+}
+
+.caps{
+    text-transform: uppercase;
+}
+
+.subtitol2{
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+.peufoto::first-letter{
+    font-size: 5rem;
+}
+
+p a{
+    text-align: center;
+}
+
+/***-------------- Estetica --------------***/
+
+body {
+background: grey;
+}
+
+header,
+nav,
+main,
+aside,
+footer {
+  background: #f3f3ee;
+}
+
+.caixa{
+    background-color: #faf8f5;
+    border: 1px solid lightgrey;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+}
+
+.titol, .peufoto::first-letter{
+    color: #b82227;
+}
+
+.subtitol2{
+    color: gray;
+}
+    
+/* ombra de caixa / separació-horitzontal  separació-vertical desenfocament propagació color (amb comes repeteix) 
+
+
+{ box-shadow: 10px 10px 10px 10px #000000; }
+
+*/

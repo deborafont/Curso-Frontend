@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+
+<html lang="ca">
+
+<head>
+
+<meta charset="UTF-8">
+<title>Porquets en blanc i negre colorits</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    
+<style>
+
+    
+/***-------------- Estructura --------------***/
+    * {box-sizing: border-box;}
+    
+h1 { padding: 20px 0;}
+h2 { padding: 14px 0;}
+h3 { padding: 8px 0;}
+p  { padding: 6px 0;}
+    
+.fons-blanc,
+.fons-negre, 
+.fons-clar,
+.fons-fosc { 
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 1rem 0;
+    }
+
+.fons-blanc div,
+.fons-negre div, 
+.fons-clar div,
+.fons-fosc div { display: inline-block;}
+
+    
+figure { 
+    width: 300px;
+    height: 200px;
+    }
+        
+img { 
+    width: 300px;
+    height: 200px;
+    }
+
+
+/***-------------- Tipografia --------------***/
+
+html {
+    font-size: 16px;
+     text-align: center; 
+    }
+
+h1 { font-size: 3rem; }
+h2 { font-size: 2.4rem; }
+h3 { font-size: 2rem; }
+
+/***-------------- Estetica --------------***/
+
+    /***
+
+colors
+--------
+    
+#ff0000 vermell  
+#00ff00 vert     
+#0000ff blau
+     
+#00ffff blau cel  
+#FFD700 daurat  
+#FF8C00 tronja
+    
+#ffff00 groc    
+#d0d0d0 gris
+#8A2BE2 violeta
+#808000 oliva
+#ff00ff magenta 
+
+***/
+    
+/* Colors foscos */
+   img.fosc-1 { background: #ff0000; } 
+   img.fosc-2 { background: #00ff00; } 
+   img.fosc-3 { background: #8A2BE2; } 
+
+/* Colors clars */
+   img.clar-1 { background: #00ffff; }
+   img.clar-2 { background: #FFD700; }
+   img.clar-3 { background: #FF8C00; }
+
+/*
+
+color foscos sobre clars
+multiply - multiplicar
+darken  - color fosc
+
+    
+colors clars sobre foscos
+screen - dividir
+lighten - color clar
+color-dodge - esquivar de color
+
+    
+    
+hue - tonalitat
+color - color
+exclusion - exclusió
+overlay - superposició   
+color-burn  - color cremat
+difference - diferència
+saturation - saturació
+luminosity - lluminositat
+
+*/
+
+.fons-clar  { background: #FFD700; color: #000; }
+.fons-fosc  { background: #808000; color: #fff; }
+    
+.fons-clar .multiplicar { mix-blend-mode:  multiply;}
+.fons-clar .mes-fosc { mix-blend-mode: darken;}
+    
+
+.fons-fosc .dividir { mix-blend-mode: screen;}
+.fons-fosc .mes-clar { mix-blend-mode: lighten;}
+.fons-fosc .esquivar { mix-blend-mode: color-dodge;}   
+
+
+</style>
+
+</head>
+
+<body>
+<header>
+    <h1>Porquets en blanc i negre colorits</h1>
+
+</header>
+    
+<div class="fons-clar">
+   
+    <h2> Fons daurat</h2>
+    <p>Imatges amb color de fons CSS mes foscos que el daurat.</p>
+    <h3>multiply - multiplicar</h3>
+    <div>
+        <figure class="multiplicar">
+            <img class="fosc-1" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div> 
+    
+     <div>
+        <figure  class="multiplicar">
+            <img  class="fosc-2" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div> 
+
+         <div>
+        <figure  class="multiplicar">
+            <img  class="fosc-3" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div>
+
+</div> 
+    
+<div class="fons-clar">
+
+    <h3>darken - color fosc</h3>
+    <div>
+        <figure class="mes-fosc">
+            <img class="fosc-1" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div> 
+    
+     <div>
+        <figure  class="mes-fosc">
+            <img  class="fosc-2" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div> 
+
+         <div>
+        <figure  class="mes-fosc">
+            <img  class="fosc-3" src="imatges/porquet-600x400blanc-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons blanc</p>
+    </div>
+
+</div> 
+
+    
+<div class="fons-fosc">
+   
+    <h2>Fons Oliva</h2>
+    <p>Imatges amb color de fons CSS mes clars que el color oliva.</p>
+    <h3>screen - dividir</h3>
+   
+    <div>
+        <figure class="dividir">
+            <img class="clar-1" src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+        
+    <div>
+        <figure class="dividir">
+            <img class="clar-2"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+
+    <div>
+        <figure class="dividir">
+            <img  class="clar-3"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div>   
+  
+</div> 
+
+<div class="fons-fosc">
+   
+    <h3>lighten - aclarir</h3>
+   
+    <div>
+        <figure class="mes-clar">
+            <img class="clar-1" src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+        
+    <div>
+        <figure class="mes-clar">
+            <img class="clar-2"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+
+    <div>
+        <figure class="mes-clar">
+            <img  class="clar-3"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div>   
+  
+</div> 
+
+<div class="fons-fosc">
+
+    <h3>color-dodge - esquivar color</h3>
+   
+    <div>
+        <figure class="esquivar">
+            <img class="clar-1" src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+        
+    <div>
+        <figure class="esquivar">
+            <img class="clar-2"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div> 
+
+    <div>
+        <figure class="esquivar">
+            <img  class="clar-3"  src="imatges/porquet-600x400negre-transparent.gif">
+        </figure>
+        <p>GIF<br>Color transparent i fons negre</p>
+    </div>   
+  
+</div> 
+    
+</body>
+</html>

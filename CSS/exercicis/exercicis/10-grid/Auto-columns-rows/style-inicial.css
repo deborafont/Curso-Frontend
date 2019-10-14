@@ -1,0 +1,137 @@
+
+
+/***** ESTRUCTURA *****/
+
+/* 
+
+Creacio de columnes
+grid-template-columns: none | auto |max-content | min-content | length (unitats de mida)
+
+---
+medianil, separació entre tracks 
+grid-gap: (unitats de mida)
+
+---
+grid-row:;
+grid-column: / Especifica la mida i la ubicació de un fill en un disseny de graella
+és una abreviació de: grid-column-start / grid-column-end
+
+span son les cel·les que ocupa
+grid-column: span 3; 
+
+grid-column: grid-column-start / grid-column-end;
+grid column: 2 / 4;
+grid column 2 / span 2;
+
+grid -area defineix on comença i on acaba un area es una abreviació de 
+grid-row-start
+grid-column-start
+grid-row-end
+grid-column-end
+grid-area: grid-row-start / grid-column-start / grid-row-end / grid-column-end | itemname;
+grid-area: 2 / 3 / span 2 / span 3;
+
+
+grid-area: span 2 / span 3;
+
+---
+Adapta la imatge al contenidor
+object-fit: fill  |  contain  | cover  | none | scale-down
+
+
+-----
+
+controla com s'insereixen els elements auto-situats a la graella.
+grid-auto-flow: row  |  column  |  dense  |  row dense  |  column dense 
+
+
+exercici de 01 a 11 passos
+
+*/
+
+main {
+	display: grid; 
+
+/* 01 - Fem 12 columnes de una fracció (queda desbordat per que agafa la mida de la imatge) 
+	grid-template-columns: repeat(12, 1fr); */
+
+
+/* 03 - medianil, separació entre tracks 
+	grid-gap: 4px;
+*/	
+
+/* 08 - mida automatica de les files - ara les imatges estan deformades - per arreglar-ho cal activar 09 
+	grid-auto-rows: 100px;
+*/
+
+/* 10 - omplim els forats 
+grid-auto-flow: row dense;
+*/
+
+}
+
+
+main img {
+
+/* 02 - Ara la imatge ocupa només el 100% del track que li correspon 
+i l'ample de main es del 100% i no es desborda 
+width: 100%;
+*/
+
+/* 07 - Ara la imatge ocupa només el 100% del track que li correspon en alçada pero
+con que les imatges son fills directes del grid sense un div queden aplanades - per arreglar-ho activa 08 
+height: 100%;
+*/
+
+/* 09 - adapta la imatge al contenidor 
+object-fit: cover;
+*/
+
+}
+
+
+/* 04 - cel·les que ocupa el track  */
+main img:nth-child(1) {
+	grid-column: 2 / 4;
+	grid-row: span 3;
+}
+
+
+/* 05 (desactiva 04) - cel·les que ocupa el track amb areas  */
+main img:nth-child(3n) {
+	grid-area: span 2 / span 3;
+}
+
+
+/* 06 - cel·les que ocupa el track amb areas pero genera forats, per arreglar-ho cal activar 07  */
+main img:nth-child(5n) {
+	grid-area: span 1 / span 4;
+}
+
+
+
+/* 11 - cel·les que ocupa el track amb areas 
+main img:nth-child(8n) {
+	grid-area: span 2 / span 4;
+
+}
+*/
+
+
+/* ESTRUCTURA sense relació amb Grid Layout */
+
+body  {padding:20px;}
+
+
+/***** TIPOGRAFIA *****/
+
+
+
+
+/***** ESTETICA *****/
+
+main { background: LightGray; }
+
+
+
+

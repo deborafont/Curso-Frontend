@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="ca"> 
+  <head>  
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+      <meta charset="UTF-8"> 
+    
+    <title>Mascara 1</title>  
+      
+      
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" />
+    
+    <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+
+  <style>
+      
+/*  
+* { outline: 1px pink solid;}   
+*/
+    
+/***** ESTRUCTURA *****/
+
+
+    main {  
+        
+    display: grid;
+    height: 100vh;
+    grid-template-columns: auto;
+    grid-template-rows: auto ; 
+        
+    }
+
+    .fondo { 
+        grid-area: 1 / 1 / 2 / 2;
+    top: 0;
+    left:0; 
+    }   
+           
+    .texto { grid-area: 1 / 1 / 2 / 2;  }
+        
+/***** TIPOGRAFIA *****/
+
+
+    ©
+
+    h1 { 
+        
+    text-align: center;  
+    font-size: 20vmin; font-weight: bold;
+    text-transform: uppercase;
+      
+    }
+    
+     
+      
+    .texto {  align-self: center; }
+      
+      
+/***** ESTETICA *****/
+
+
+    .fondo {
+
+    background: url("img/cara.jpg" );
+    filter: grayscale(100%); 
+    
+    }
+  
+   h1 {
+        filter: grayscale(0%);
+    /* mascara */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    /* fondo */
+       
+    background-image: url("retrato-chica.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    top: 0;
+    left:0; 
+       
+    /* para navegadores que no soportan el efecto */
+     color: azure;   
+
+    /*    */
+
+       -webkit-text-stroke: 1px rgba(255, 255, 255, 0.5);
+   
+    
+    }
+        
+
+      
+      </style>    
+  </head>
+
+ <body>
+    <main> 
+      <div class="fondo"> </div>
+      <div class="texto">
+        <h1> Esta texto tiene una imagen en color </h1>  
+      </div>
+      
+    </main>
+
+  </body>  
+</html>

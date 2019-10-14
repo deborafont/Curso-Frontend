@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+    <style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        /* width: 100vw; */
+        /* height: 100vh; */
+        display: grid;
+        /* repartimos los espasios de tal manera que si queremos poner en la misma fila el dos elementos lo pondremos en las mismas comillas. ex: "main main aside". Si queremos dejar un espacio vacio pondremos un punto ex:". header header" "*/
+        grid-template-areas: 
+        "header menu menu"
+         "header main aside" 
+         "header main aside" 
+         "footer footer aside";
+    }
+
+    div{
+        /* background-color: orange; */
+        outline: 1px black solid;
+        padding: 10px;
+        text-align: center;
+        background-size: cover;
+        color: white;
+        text-shadow: 2px 2px 3px black;
+        /* ponemos los textos abajo del todo */
+        display: flex;
+       
+    }
+
+    div:nth-child(1) { grid-area: header; background-image: url("/img/spray.jpg");}
+    div:nth-child(2) { grid-area: menu; background-image:url("/img/spray.jpg");}
+    div:nth-child(3) { grid-area: main; background-image:url("/img/spray.jpg");}
+    div:nth-child(4) { grid-area: aside; background-image:url("/img/spray.jpg");}
+    div:nth-child(5) { grid-area: footer; background-image:url("/img/spray.jpg");}
+
+
+
+
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat quo facere pariatur optio, necessitatibus nulla itaque rerum illum amet maxime maiores similique totam sit facilis! Voluptates, repellat. Numquam, exercitationem voluptatem?Pariatur eius est obcaecati adipisci veritatis magnam numquam incidunt asperiores odit, corrupti, rerum non deleniti harum, tenetur dolorum voluptatem. Veritatis doloribus perspiciatis esse molestiae et debitis quis provident modi quaerat.</p></div>
+
+        <div><p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sint fugit nihil iure praesentium sapiente tenetur, placeat quidem totam quia esse quod iusto fugiat non nesciunt eos dolorem itaque amet maxime.</p></div>
+
+        <div><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Blanditiis similique error aliquam enim accusantium a! Fugiat placeat eum quod ea molestias dicta iusto eveniet deserunt ad nihil! Animi, itaque ut!
+        Distinctio nobis quae suscipit repudiandae, dignissimos sit quas nesciunt voluptatem totam numquam perspiciatis in velit assumenda consequatur officia ab perferendis dolores voluptate laboriosam. Temporibus, repellat facere alias in voluptatum ad.
+        Nihil maiores dolorem soluta enim numquam inventore quasi facilis sunt quibusdam modi? Earum ut maiores, iusto eveniet maxime, dicta labore a aspernatur architecto, est ad laborum beatae voluptatibus eos dolore?
+        Ipsa, sunt porro sequi optio, facilis magni nihil iure unde harum cupiditate voluptate dicta rerum. Maiores, sit minus! Consequuntur reiciendis dolores officia exercitationem nesciunt nulla cum quia ea aliquid laborum.
+        Esse molestiae harum error animi, et velit earum assumenda nam quam magni doloremque optio molestias ullam sit, nobis reiciendis fugiat! Odit ratione quam porro enim laboriosam labore, asperiores ipsam id!</p></div>
+
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut, accusamus, eos quasi sapiente, eaque eveniet eum inventore voluptatibus ut aspernatur velit pariatur dolor excepturi tempora debitis labore fugiat laborum at.
+        Debitis alias laudantium eligendi ipsa fugiat ratione et. Iusto consequatur sint magnam! Ratione harum labore adipisci nemo, natus, atque, fugit ut sequi inventore magnam cumque quidem quaerat dolores optio vel?
+        Optio quas doloribus porro consectetur, explicabo accusantium ipsum voluptatibus, ab aut rerum pariatur provident id iusto excepturi. Aut odio accusantium numquam eius. Molestiae consequuntur eveniet harum iure necessitatibus quia assumenda?</p></div>
+
+        <div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime nobis eveniet eum reprehenderit, consequatur hic? Fugit accusamus inventore aperiam ut eveniet sed nobis tenetur maiores voluptas quisquam perspiciatis, minus ea?</p></div>
+    </main>
+
+    
+</body>
+</html>

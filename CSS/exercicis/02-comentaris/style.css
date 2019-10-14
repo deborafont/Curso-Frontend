@@ -1,0 +1,17 @@
+
+
+/* Aixóp es un altre comentari que pot se de varies lineas,
+s´ha de tancar*/
+
+
+
+
+/*paragraf amb color taronja*/
+p {color: orange;}
+
+
+/*
+paragraf amb color taronja
+anula l'estil anterior perque va despres
+*/
+p {color:pink ;}

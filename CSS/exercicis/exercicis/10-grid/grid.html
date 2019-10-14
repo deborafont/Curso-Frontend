@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid</title>
+
+    <style>
+    
+    *{
+        margin: 0;
+        padding: 0;
+    }
+
+    .container{
+        /* width: 100vw; */
+        /* height: 100vh; */
+        display: grid;
+        /* repartimos los espasios de tal manera que si queremos poner en la misma fila el dos elementos lo pondremos en las mismas comillas. ex: "main main aside". Si queremos dejar un espacio vacio pondremos un punto ex:". header header" "*/
+        grid-template-areas: 
+        "header"
+         "menu" 
+         "main " 
+         "aside"
+         "footer";
+    }
+
+    div{
+        background-color: orange;
+        outline: 1px black solid;
+        padding: 10px;
+        text-align: center;
+    }
+
+    div:nth-child(1) { grid-area: header; background-color: deeppink;}
+    div:nth-child(2) { grid-area: menu; background-color: olivedrab;}
+    div:nth-child(3) { grid-area: main; background-color:yellow;}
+    div:nth-child(4) { grid-area: aside; background-color: teal;}
+    div:nth-child(5) { grid-area: footer; background-color: red;}
+
+    @media (min-width: 768px){
+        .container{
+            grid-template-areas: 
+                "header header header"
+                "menu menu menu" 
+                "main main aside" 
+                "footer footer footer";
+        }
+    }
+
+    @media (min-width: 992px){
+
+        .container{
+            grid-template-areas: 
+                "header menu menu"
+                "main main aside" 
+                "footer footer footer";
+        }
+    }
+    </style>
+</head>
+
+<body>
+
+    <main class="container">
+        <div>cap</div>
+        <div>menu</div>
+        <div>contingut</div>
+        <div>sense importancia</div>
+        <div>peu</div>
+    </main>
+
+    
+</body>
+</html>

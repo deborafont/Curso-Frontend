@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS, Javascript">
+    <title>Proba animacion en hover</title>
+    <style>
+    .classe_imatge{
+        padding: 20px;
+        transform:scale(1.2);
+        transition: all 500ms ease-in-out;
+    }
+    .classe_imatge:hover{
+        transform: scale(1.2);
+        -webkit-transform: scale(1);
+    }
+    .classe_paragraf{
+        transition:all 500ms ease-in-out;
+    }
+    .classe_paragraf:hover{
+        background-color: blueviolet;
+        font-size: 20px;
+    }
+    img{
+        width: 400px;
+    }
+    .buttom{
+        animation: 5s infinite normal lliscaboto;
+    }
+    @keyframes lliscaboto{
+        0%{
+            margin-left: 100%;
+            background-color: black;
+            color: white;
+            font-size: 50%;
+        }
+        100%{
+            margin-left: 0;
+            background-color: white;
+            color: black;
+            font-size: 100%; 
+        }
+       
+    }
+    
+    .swing:hover{
+        animation: swing 1 s ease;
+        animation-iteration-count: 1;
+    }
+    </style>
+</head>
+<body>
+    
+    <div>
+        <img class="classe_imatge classe_imatge:hover" src="/images/coffe.jpg" alt="mano cogiendo un cafe">
+
+        <p class="classe_paragraf classe_paragraf:hover">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi maiores minima itaque illo molestias illum dolorum temporibus esse! Aut doloremque sed dicta in provident incidunt facere laborum? Nam, adipisci cupiditate.</p>
+
+        <p class="swing:hover">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis, impedit perspiciatis quod cumque voluptate quidem tempore dignissimos recusandae amet eum dolorem libero veniam voluptatibus et iusto, inventore rem beatae nam.</p>
+        <button class="buttom">agafam</button>
+    </div>
+</body>
+</html>

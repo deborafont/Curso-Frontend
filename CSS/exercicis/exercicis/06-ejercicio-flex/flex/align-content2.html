@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- propiedad dir (direction de lectura). De izquierda a derecha (ltr, es el predeterminado). De derecha a izquierda (rtl). -->
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Align-content</title>
+
+    <style>
+        /* aplicamos inline-flex en el padre "main" para que los elementos se posicionen uno al lado del otro */
+        /* main{display: inline-flex;} */
+
+        /* aplicamos flex en el display y en flex-direction la direccion que quremos que haga el flex. Opciones (Row es por defecto, row-reverse de izquierda a derecha, colum en columna el primer item arriba, column-reverse en columna el primer item bajo */
+        /* main{ 
+            display: flex;
+            flex-direction: row;
+            } */
+
+            /* cuando hacemos mas pequeña la pantalla los elementos tienen el mismo tamaño y posiciona el 3 abajo si ya no cabe. Y nowrap es justo lo contrario. Cuando hacemos mas pequeña la pantalla en no baja ningun elemento, les cambia el tamaño para que sigan todo en el primer fila */
+
+            /* main{ 
+                display: flex;
+                flex-wrap: nowrap;
+            }  */
+
+            main{ 
+                margin:auto;
+                background-color: grey;
+                height: 500px;
+                width: 500px;
+                display: flex;
+                /* redistribuir los elemntos horizontalmente */
+                /* justify-content: ; */
+                /* redistribuir los elemntos horizontalmente. Stretch es por defecto. */
+                /* align-items: ; */
+                /* flex-direction: row; */
+            } 
+
+        body{
+            padding: 20px;
+        }
+
+        section{
+            padding: 20px;
+            /* height:  150px; */
+            width: 150px;
+            background-color: orange;
+            border:1px black solid;
+        }
+
+        section:nth-child(1){order:6;}
+        section:nth-child(2){order: 5;background-color: hotpink;}
+        section:nth-child(3){order: 4; background-color: hotpink;}
+        section:nth-child(4){order:3;}
+        section:nth-child(5){order:2;}
+        section:nth-child(6){order:1;}
+
+    </style>
+</head>
+
+<body>   
+    <main>
+        <section>
+            Flex Item 1
+        </section>
+    
+        <section>
+            Flex Item 2
+        </section>
+    
+        <section>
+            Flex Item 3
+        </section>
+
+        <section>
+            Flex Item 4
+        </section>
+    
+        <section>
+            Flex Item 5
+        </section>
+    
+        <section>
+            Flex Item 6
+        </section>
+    </main>
+</body>
+</html>

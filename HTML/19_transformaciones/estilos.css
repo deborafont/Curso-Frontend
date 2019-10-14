@@ -1,0 +1,60 @@
+body{
+    margin:0;
+    background:#ddd;
+}
+
+.contenedor{
+    display:flex;
+    justify-content: center;
+}
+
+.caja{
+    margin: 150px 15px;
+    width:150px;
+    height: 150px;
+    background: crimson;
+    color:#fff;
+    font-size: 40px;
+    text-align: center;
+    line-height: 150px;
+    transition: all 1s;
+}
+
+.caja:nth-child(1){
+    background-color: purple;
+}
+.caja:nth-child(1):hover{
+    /* movemos la pieza cuando pasamos por el cursor encima en diagonal hacia la derecha y abajo */
+    transform: translate(100px,100px);
+}
+
+.caja:nth-child(2){
+    background-color: orangered;
+}
+.caja:nth-child(2):hover{
+    /* rotamos la pieza cuando pasamos por el cursor encima, 90º a la derecha. tres maneras de poner lo mismo  */
+    transform: rotate(90deg);
+    /* transform: rotate(90grad); */
+    /* transform: rotate(1turn); */
+    /* otro tipo de movimiento que se le puede añadir a la funcion rotate */
+    transform-origin: left top;
+}
+
+.caja:nth-child(3){
+    background-color: green;
+}
+.caja:nth-child(3):hover{
+    /* escalamos primero sobre el eje de X y luego en X y Y */
+    transform: scaleX(1.5);
+    transform: scale(1.5,1.5);
+}
+
+.caja:nth-child(4){
+    background-color: yellow;
+}
+.caja:nth-child(4):hover{
+    transform: skewX(20deg);
+    transform: matrix(0,0,0,0,0,0);
+}
+
+

@@ -1,0 +1,93 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <title>Cuadrados con calc()</title>
+
+    <style>
+
+        :root {
+            --base: 20px;
+        }
+    
+        *{
+            /* padding: 10px; */
+        }
+        html {
+            box-sizing: border-box;
+
+            /* (font petita + (font gran - font petita) *  ((ample total - ample mínim) / (ample máxim - ample mínim ))) */
+
+            font-size:calc( 12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        body{
+            text-align: center;
+        }
+
+        main{
+            text-align: left;
+            margin: 0 auto;
+            display:inline-block;
+            background-color: aqua;
+        }
+
+        div{
+            outline: 1px black solid;
+        }
+
+        h1{font-size: 3rem;}
+        h2{font-size: 2rem;}
+
+
+        h1, h2{text-align: center;}
+
+        .grande{
+            background-color: blue;
+            width: calc(var(--base) * 21) ;
+            height: calc(var(--base) * 21);
+            margin-bottom: var(--base);
+        }
+
+        .pequeño{
+            display: inline-block;
+            text-align: left;
+            background-color: red;
+            width: calc(var(--base) * 10);
+            height: calc(var(--base) * 10);
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+
+            <div class="grande"></div>
+
+            <div>
+                <div>
+                    <div class="pequeño"></div>
+                    <div class="pequeño"></div>
+                </div>
+
+                <div>
+                    <div class="pequeño"></div>
+                    <div class="pequeño"></div>
+                </div>
+            </div>
+
+    </main>
+
+
+</body>
+</html>

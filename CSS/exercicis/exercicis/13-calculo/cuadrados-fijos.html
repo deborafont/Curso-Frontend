@@ -1,0 +1,94 @@
+<!DOCTYpE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <title>columnas calc()</title>
+
+    <style>
+    /* queremos enganchar un footer abajo pero que cuando hayan muchos parrafos no se vea y haya un scroll. Y cuando hay pocos quede pegado abajo. Solo queremos ver el pie cuando el contenido de la pagina no llena el tamaño de la pantalla*/
+        *{
+            /* padding: 10px; */
+        }
+        html {
+            box-sizing: border-box;
+
+            /* (font petita + (font gran - font petita) *  ((ample total - ample mínim) / (ample máxim - ample mínim ))) */
+
+            font-size:calc( 12px + (24 - 12) * ((100vw - 300px) / (1600 - 300)));
+        }
+
+        *, *:before, *:after {
+            box-sizing: inherit;
+        }
+
+        main{
+            /* 02.en el main ponemos una altura minima restando los pixels que tiene el footer */
+            min-height: calc(100vh - 150px);
+        }
+
+        h1{font-size: 3rem;}
+        h2{font-size: 2rem;}
+
+
+
+        .grande{
+            width: 405px;
+            height: 400px;
+            background-color: blue;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .fila1, .fila2{
+            display: block;
+        }
+        .pequeño{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            display: inline-block;
+        }
+
+
+        h1, h2{text-align: center;}
+
+        footer{
+            background-color: brown;
+            /* 01.ponemos una altura al footer primero */
+            height: 150px;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+
+        <div class="grande"></div>
+        <div class="fila1">
+            <div class="pequeño"></div>
+            <div  class="pequeño"></div>
+        </div>
+
+        <div class="fila2">
+            <div  class="pequeño"></div>
+            <div  class="pequeño"></div>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>Esto es un pie</p>
+    </footer>
+
+</body>
+</html>

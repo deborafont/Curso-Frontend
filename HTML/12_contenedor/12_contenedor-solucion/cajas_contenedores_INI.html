@@ -1,0 +1,94 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Cajas y contenedores</title>
+<style>
+/* reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0; relleno a 0
+ margin: 0;  margen a 0
+ font-size: 100%;
+ font-weight: normal;
+}
+/* fin reset css*/
+
+/* hacemos flotar la nota a la derecha */
+.lateral{
+  width: 30%;
+  float:right;
+  background-color: white;
+  border: 1px solid #009;
+  background-color: #9cf;
+  border-top:1.25rem solid #009;
+  margin: 0 10px;
+  padding: 10px 20px;
+
+}
+/* caracteristicas principales, comunes */
+body{
+  font-family: sans-serif;
+  margin: 20px auto;
+  width: 760px;
+  padding: 15px;
+  border:3px solid #009;
+}
+
+h1{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 3.125rem;
+  color: #009;
+  /* letra mayuscula */
+  text-transform: uppercase;
+  /* background-color: rgb(47, 189, 189); */
+  padding:5px 20px ;
+  /* si queremos que un elemento supere el padding del body ponemos en negativo los margenes, en este caso laterales */
+  margin:15px -15px;
+  /* degradat */
+  background-image: linear-gradient( rgb(47, 189, 189),#63c);
+}
+h2{
+  font-size: 2rem;
+  color:#63c;
+  border-top: 2px dotted #63c;
+  border-bottom: 2px dotted #63c;
+  margin: 0.625rem 0px;
+  padding: 10px 0;
+  /* para esconder las lineas del h2 cuando entran en contacto con el elemento .lateral. El overflow lo que hace es que cuando coinciden dos elementos en capas diferentes puedes hacer que uno de ellos no se vea. */
+  overflow: hidden;
+}
+.lateral h2{
+  border:none;
+  margin: 0;
+}
+</style>
+</head>
+
+<body id="article">
+  <div id="banner">
+    <img src="/imagenes/banner.jpg" width="760" height="198" alt="CSS: The Missing Manual">
+  </div>
+
+
+  <h1>El mágico mundo del CSS</h1>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. </p> 
+  
+
+<div class="lateral">
+  <h2>NOTA</h2>
+<p class="note">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est.</p>
+</div>
+
+
+<div class="izquierda">
+  <h2>El poder inimaginable del CSS</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores.</p>
+<h2>No soy yo!</h2>
+<p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+  <h2>Nunca a mi!</h2>
+  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam.</p>
+  <p>&nbsp;</p>
+</div>
+
+</body>
+</html>

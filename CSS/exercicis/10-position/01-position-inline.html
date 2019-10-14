@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position inline</title>
+
+    <style>
+        .contenidor{
+            background-color: brown;
+            position:relative;
+        }
+
+        span{
+            background-color: yellow;
+            /* mueve la parte de texto respecto a su posicion (position:relative). Se queda el espacio vacio que ocupaba el texto*/
+            /* mueve la parte de texto respecto a se padre (position: absolute). Pierde el espacio que ocupaba y se queda en la capa de arriba */
+            /* mueve la parte de texto respecto al viwport (position: fixed). si no le ponemos ni left ni top ni nada se queda en el medio tapando. Si le damos valor 0 a top se quedara clabado aunque movamos el scroll de la pagina */
+            /* devuelve a la posicion inicial el texto(position:static) */
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Position inline</h1>
+        <div class="contenidor">
+            
+            <div >
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p> Lorem ipsum dolor sit amet <span>consectetur adipisicing</span> elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p> ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet quasi beatae voluptatum est cumque, voluptas sint rerum distinctio asperiores iste. Similique magni modi facere temporibus ut quidem aliquam illo quasi!</p>
+            </div>
+
+        </div>
+</body>
+</html>

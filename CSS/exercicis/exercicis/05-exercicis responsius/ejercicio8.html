@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio8</title>
+
+    <style>
+
+        div{
+            width: 100vh;
+        }
+
+        .mobil{
+            background-color: red;
+        }
+        
+        .tablet{
+            background-color: green; 
+        }
+
+        .portatil{
+            background-color:yellow;
+        }
+
+        .escritorio{
+            background-color:blue;
+        }
+    /* ----------------------------MEDIA QUERIES----------------------------------- */
+        /* si fem el mquery amb min-width començarem per la pantalla mes petita a la mes gran */
+
+        /* amaguem tots el elements */
+
+    .mobil,.tablet, .portatil, .escritorio{display: none;}
+
+
+    @media (min-width: 400px) and (max-width: 800px) { 
+        .mobil{display: inline-block;}
+    }
+
+    @media (min-width: 801px) and (max-width: 1000px) { 
+        .mobil {display: none;}
+        .tablet{display: inline-block;} 
+    } 
+
+    @media (min-width: 1001px) and (max-width: 1200px)  { 
+        .mobil, .tablet{display: none;}
+        .portatil{display: inline-block;}
+    } 
+
+    @media (min-width: 1200px){
+        .mobil, .tablet, .portatil{display: none}
+        .escritorio{display: inline-block}
+    }
+    </style>
+
+</head>
+<body>
+
+    <div class="mobil">
+        <p>mobil</p>
+    </div>
+
+    <div class="tablet">
+        <p>tablet</p>
+    </div>
+
+    <div class="portatil">
+        <p>portatil</p>
+    </div>
+
+    <div class="escritorio">
+        <p>escritorio</p>
+    </div>
+
+</body>
+</html>

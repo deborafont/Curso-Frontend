@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Exercici flex</title>
+
+    <style>
+    
+    header{
+        height: 100vh;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        background-image: url(galaxy-11098_1280.jpg);
+        background-size: cover;
+    }
+
+    h1, h2 ,h3, p{
+        padding: 10px;
+        color: white;
+        margin: auto;
+        text-shadow: 1px 1px 2px black; 
+    }
+
+    article{
+        padding: 10px;
+    }
+
+    img{
+        width: 50px;
+    }
+
+    main{
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        background-image: url("/img/galaxy.jpg");
+        background-size: cover;
+    }
+
+    .cabecera-pagina1, .pie-pagina1{
+        height: 10%;
+    }
+    
+    .pie-pagina1 img{
+        transform: rotate(180deg)
+    }
+
+    .columnas{
+
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    article{
+        width: 300px;
+        margin: auto;
+    }
+
+
+    @media (min-width: 400px) and (max-width: 800px) { 
+    }
+
+    @media (min-width: 801px) and (max-width: 1000px) { 
+    } 
+
+    @media (min-width: 1001px) and (max-width: 1200px)  { 
+    } 
+
+    @media (min-width: 1200px){
+    }
+
+
+    
+    </style>
+</head>
+<body>
+
+
+    
+    <header  id="pagina0">
+        <h1>Estoy centrada</h1>
+        <p><a href="#pagina1"><img src="/img/flecha-transparente.png" alt="flecha"></a></p>
+    </header>
+
+    <main >
+        <section class="cabecera-pagina1">
+            <h2 id="pagina1">A ver de que hablamos</h2>
+        </section>
+        
+        <section class="columnas">    
+
+            <article class="mobil">
+                <h3 >Columna 1</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+            <article class="tablet">
+                <h3 >Columna 2</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </article >
+
+            <article class="portatil">
+                <h3 >Columna 3</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. </p>
+            </article>
+
+            <article class="escritorio">
+                <h3 >Columna 4</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam fugiat, eveniet totam voluptatibus ipsum, expedita, dolore accusamus nemo quod eligendi maiores itaque ipsa qui modi ratione corrupti atque repudiandae. Beatae!In, dolores? Eius quisquam eveniet quibusdam cumque pariatur asperiores esse accusamus necessitatibus similique tenetur totam, architecto minus incidunt quia nesciunt at accusantium corrupti quis quidem impedit quo illum consequatur iste.Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+
+        </section>
+
+            <article class="pie-pagina1">
+                <p><a href="#pagina0"><img src="/img/flecha-transparente.png" alt="flecha"></a></p>
+            </article>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+</body>
+</html>

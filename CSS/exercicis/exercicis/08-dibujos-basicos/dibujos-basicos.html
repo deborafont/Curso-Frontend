@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dibujos básicos</title>
+
+    <style>
+    
+    *{
+        margin:0;
+        padding: 0;
+        border: 1px grey solid;
+    }
+    body{
+        padding: 20px;
+    }
+
+    main, header{
+        text-align: center;
+        padding: 10px;
+    }
+
+    section {padding: 20px 0;}
+
+    div{margin: 60px auto;}
+
+    .cuadrat{
+        width: 200px;
+        height: 200px;
+        background-color: red;
+    }
+
+    .cercle{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        background-color: orange;
+    }
+
+    .mig-cercle{
+        width: 200px;
+        /* bajamos la altura para poder hacer el medio circulo */
+        height: 100px;
+        /* los bordes radius en algunas ocasiones no funcionan con porcentaje y hay que ponerlo en px */
+        border-radius: 100px 100px 0 0 ;
+        background-color: orange;
+    }
+
+    .rombo{
+        width: 150px;
+        /* augmentamos la altura porque lo que queremos hacer es un rombo que es mas un rectangulo que un cuadrado */
+        height: 150px;
+        margin-top: 60px;
+        margin-bottom: 60px;
+        background-color: pink;
+        /* el skew deforma la imagen, y lo rotamos media vuelta a la derecha */
+        transform: rotate(45deg) skew(15deg, 15deg);
+        
+    }
+
+    .gota{
+        width: 200px;
+        height: 200px;
+        /* redondeamos todos los bordes menos uno */
+        border-radius: 50% 0 50% 50%;
+        background-color: purple;
+        /* lo rotamos un cuarto de vuelta a la izquierda */
+        transform: rotate(-45deg);
+    }
+
+    .hoja{
+        width: 200px;
+        height: 200px;
+        border-radius: 50% 10% 50% 10%;
+        /* lo rotamos un cuarto de vuelta a la izquierda */
+        transform: rotate(-45deg);
+        background-color: yellow;
+    }
+
+    .triangulo-n{
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-top:none;
+        border-bottom: 200px solid brown;
+        border-right: 100px solid transparent;
+    }
+
+    .triangulo-e{
+        width: 0;
+        height: 0;
+        border-left: 200px solid orchid;
+        border-top:100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right: none;
+    }
+
+    .triangulo-s{
+        width: 0;
+        height: 0;
+        border-left: 100px solid transparent;
+        border-top:200px solid turquoise;
+        border-bottom: none;
+        border-right:100px solid transparent; 
+    }
+
+    .triangulo-o{
+        width: 0;
+        height: 0;
+        border-left: none;
+        border-top:100px solid transparent;
+        border-bottom: 100px solid transparent;
+        border-right: 200px solid salmon;
+    }
+
+    img{
+        width: 200px;
+        height: 200px;
+        border: none;
+    }
+
+    .huevo{
+        width: 200px;
+        height: 260px;
+        border-radius: 50% 50% 50% 50% / 60% 60% 38.46% 38.46%;
+        /* background-color: royalblue; */
+        background-image: url(baoba.png);
+        background-size: 200px;
+        background-repeat: no-repeat;
+        background-position-y: 135px;
+    }
+    .comecocos{
+        height: 0;
+        width: 0;
+        border-radius: 100px;
+        border-left: 100px solid mediumpurple;
+        border-right:100px solid white;
+        border-bottom:100px solid mediumpurple;
+        border-top:100px solid mediumpurple;
+    }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Dibujos básicos</h1>
+    </header>
+
+    <main>   
+
+        <section>
+            <h2>Cuadrat</h2>
+            <div class="cuadrat"><img src="/baoba.png" alt=""></div>
+            <p>width 200px, height 200px</p>
+        </section>
+ 
+        <section> 
+            <h2>Cercle</h2>
+            <div class="cercle"><img src="/baoba.png" alt=""></div>
+            <img src="/baoba.png" alt="" class="cercle">
+            <p>width 200px, height 200px</p>
+            <p>border-radius: 50%;</p>
+        </section>
+
+        <section>
+            <h2>Mig cercle</h2>
+            <div class="mig-cercle"></div>
+            <p>width 200px, height 100px</p>
+            <p>border-radius: 100px 100px 0 0 </p>
+        </section>
+
+        <section>
+            <h2>Rombo</h2>
+            <div class="rombo"></div>
+            <p>width 150px, height 150px</p>
+            <p>transform: rotate(45deg)</p>
+            <p>transform: skew (15deg, 15deg)</p>
+        </section>
+
+        <section>
+            <h2>Gota</h2>
+            <div class="gota"></div>
+            <p>width 200px, height 200px</p>
+            <p> transform: rotate(-45deg)</p>
+        </section>
+
+        <section> 
+            <h2>Hoja/Limon</h2>
+            <div class="hoja"></div>
+            <p>width 200px, height 200px</p>
+            <p>border-radius: 50% 10% 50% 10%</p>
+            <p>transform: rotate(-45deg)</p>
+        </section>
+
+        <section>
+            <h2>Triangulo-N</h2>
+            <div class="triangulo-n"></div>
+            <p>width 0, height 0</p>
+            <p> border-left: 100px solid transparent</p>
+            <p>border-top:100px solid transparent</p>
+            <p>border-bottom: 200px solid brown</p>
+            <p>border-right: 100px solid transparent</p>
+        </section>
+
+        <section>
+            <h2>Triangulo-E</h2>
+            <div class="triangulo-e"></div>
+            <p>width 0, height 0</p>
+            <p>border-left: 200px solid orchid</p>
+            <p>border-top:100px solid transparent</p>
+            <p>border-bottom: 100px solid transparent</p>
+            <p>border-right: none;</p>
+        </section>
+
+        <section>
+            <h2>Triangulo-S</h2>
+            <div class="triangulo-s"></div>
+            <p>width 0, height 0</p>
+            <p> border-left: 100px solid transparent</p>
+            <p>border-top:200px solid turquoise</p>
+            <p>border-bottom: none</p>
+            <p>border-right:100px solid transparent</p>
+        </section>
+
+        <section>
+            <h2>Triangulo-O</h2>
+            <div class="triangulo-o"></div>
+            <p>width 0, height 0</p>
+            <p>border-left: none</p>
+            <p>border-top:100px solid transparent</p>
+            <p>border-bottom: 100px solid transparent</p>
+            <p>border-right: 200px solid salmon</p>
+        </section>
+
+        <section> 
+            <h2>Huevo</h2>
+            <div class="huevo"></div>
+            <p>width 200px, height 260px</p>
+            <p>border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%</p>
+        </section>
+
+        <section> 
+            <h2>Come Cocos</h2>
+            <div class="comecocos"></div>
+            <p>width 200px, height 260px</p>
+            <p>border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%</p>
+        </section>
+    </main>
+</body>
+</html>

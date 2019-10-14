@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Felx negre groc</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+
+        div{
+            width: 100%;
+            /* que en contenedor ocupe el 50% del viewport */
+            height: 50vh;
+        }
+
+        .negre{
+            background-color: black;
+            color:yellow;
+            /* queremos posicionar la palabra negre, asi que posicionamos el padre como relativo */
+            position: relative;
+        }
+
+        .groc{
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .negre p{
+            width: 100%;
+            /* centramos el texto del paragrafo "negre" */
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            /* y al hijo como absoluto */
+            position: absolute;
+            /* lo posicionamos en la parte de abajo rozando con "groc" */
+            bottom: 0;
+        }
+
+        .groc p{
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="negre">
+            <p>Negre</p>
+        </div>
+
+        <div class="groc">
+            <p>Groc</p>
+        </div>
+    </main>
+</body>
+
+</html>

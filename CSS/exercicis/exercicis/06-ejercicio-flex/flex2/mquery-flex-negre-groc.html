@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>mquery felx negre groc</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            width: 100%;
+            /* el 100% de altura del viewport */
+            height: 100vh;
+            display:flex;
+            /* empezamos en columna porque empezamos por el movil */
+            flex-direction: column;
+        }
+
+        div{
+            width: 100%;
+            /* esto es lo mismo que poner 100vh */
+            height: 100%;
+            /* volvemos a poner flex en el contenedor del paragrafo para poder posicionarlos */
+            display: flex;
+        }
+
+        .negre{
+            background-color: black;
+            color:yellow;
+
+        }
+
+        .groc{
+            background-color: yellow;
+        }
+
+        p{
+            text-transform: uppercase;
+            font-size: 3rem;
+            /* centramos los parrafos en el container */
+            margin: auto;
+        }
+
+        @media (min-width: 576px) {
+            /* cambiamos la direccion de column a row cuando es una pantalla de mobil */
+            main{
+                flex-direction: row;
+            }
+        }
+        
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="negre">
+            <p>Negre</p>
+        </div>
+
+        <div class="groc">
+            <p>Groc</p>
+        </div>
+
+    </main>
+</body>
+
+</html>

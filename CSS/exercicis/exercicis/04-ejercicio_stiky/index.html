@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    header{
+        background-color: darkred;
+        color: white;
+        padding: 4rem 0;
+        font-size: 1.5rem;
+        text-align: center;
+    }  
+    div{
+        width: 50%;
+    }
+    img{
+        width: 100%;
+        display: block;
+    }
+    article p{
+        box-sizing: border-box;
+        padding:2rem;
+        height: 18rem;
+    }
+
+    .fotos1, .fotos2{
+        margin-top: -18rem;
+
+    }
+    .chicle{ 
+        position: sticky;  
+        top: 0; 
+        left: 50%; 
+    }
+    article:nth-child(2n) .art { left: 0;}
+    .fotos2{
+        margin-left: auto;
+    }
+    p { 
+    font-size: 1.4rem; 
+    line-height:1.6rem; 
+
+    }
+    </style>
+</head>
+<body>
+    <header class="chicle">
+        <h1>Imatges i textos amb sticky</h1>
+    </header>
+
+        <main>
+            <article>
+
+                <div class="article1">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, hic ratione non sint, veniam repellendus, quo aut provident cumque quam dicta odio? Itaque veritatis distinctio quis. Debitis provident quam saepe!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, hic ratione non sint, veniam repellendus, quo aut provident cumque quam dicta odio? Itaque veritatis distinctio quis. Debitis provident quam saepe!Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, hic ratione non sint, veniam repellendus, quo aut provident cumque quam dicta odio? Itaque veritatis distinctio quis. Debitis provident quam saepe!</p>
+                </div>
+
+                <div class="fotos1">
+                    <img src="/imatges/21-espiral.jpg" alt="">
+                    <img src="/imatges/42-animal-600x400.jpg" alt="">
+                    <img src="/imatges/32-abeja-600x400.jpg" alt="">
+                    <img src="/imatges/01-cranc-600x400.jpg" alt="">
+                </div>
+
+
+            </article>
+
+            <article >
+                <div class="article2">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cumque consectetur consequuntur asperiores, quia ipsa, rerum placeat eligendi temporibus quam accusantium sequi,animi tempore ab culpa dicta eum suscipit! Debitis!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cumque consectetur consequuntur asperiores, quia ipsa, rerum placeat eligendi temporibus quam accusantium sequi, animi tempore ab culpa dicta eum suscipit! Debitis!Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sit cumque consectetur consequuntur asperiores, quia ipsa, rerum placeat eligendi temporibus quam accusantium sequi,animi tempore ab culpa dicta eum suscipit! Debitis!</p>
+                </div>
+
+                <div class="fotos2">
+                    <img src="/imatges/32-abeja-600x400.jpg" alt="">
+                    <img src="/imatges/21-espiral.jpg" alt="">
+                    <img src="/imatges/42-animal-600x400.jpg" alt="">
+                    <img src="/imatges/32-abeja-600x400.jpg" alt="">
+                    <img src="/imatges/01-cranc-600x400.jpg" alt="">
+                </div>
+            </article>
+        </main>
+</body>
+</html>

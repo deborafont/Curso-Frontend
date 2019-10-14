@@ -1,0 +1,88 @@
+
+/* esto es para hacer un reset de los margenes en los navegadores 
+los ponemos a cero. si luego quiero poner un margen en otro lado no puedo ponerlo a cero*/
+/* *{
+    margin:0;
+    padding: 0;
+} */
+
+/* describimos los margenes del formulario */
+
+form{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    /* ponemos en auto a los lados para que me centre el formulario independientemente del tamaño de la pantalla */
+    margin-left: auto;
+    margin-right: auto;
+    /* podriamos escribirlo asi tambien margin:20 auto; */
+    border: 1px solid grey;
+    /* añadimos un padding para separar los elementos entre si */
+    padding: 20px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    /* vamos a hacer que todo el formulario se centre ocupando un 40% de ancho*/
+    width: 40%;
+    /* vamos a poner una sombra al formulario */
+    box-shadow: 0 0 20px rgb(0,0,0,0.3);
+    background-image: url(/imagenes/fondo.png);
+    background-size: contain;
+
+}
+
+input, textarea{
+    /* aplicamos display block para que los elementos se pongan unos encima de otros */
+    display: block;
+    /* ponemos el ancho 100% para que cuando agamos mas grande la pantalla el formulario se acomode a el */
+    width: 100%;
+    border: 1px dotted red;
+    /* separamos los elementos entre si con el padding */
+    padding:7px;
+    margin-bottom: 15px;
+    /* para ajustar la caja al tamaño que yo le he dicho sin tener en cuenta ni el padding ni el borde ya que el borde del input y textarea de la derecha no cumple mis requisitos, usaremos el box-sizing: border-box */
+    box-sizing: border-box;
+}
+/* vamos a cambiar los bordes y el fondo cuando seleccionamos el campo. Lo cambiaremos con el seudoelemnto focus(es como lo que seleccionamos*/
+input:focus, textarea:focus{
+    border: 1px solid green;
+    background-color: rgb(255, 255, 157);
+    color:white;
+}
+/* tenemos que aplicar estilo al boton por separado */
+input[type="submit"]{
+    background: red;
+    color: white;
+    /* para poner las letras en mayuscula tenemos text-transform: uppercase */
+    text-transform: uppercase;
+    /* eliminamos el borde porque es punteado */
+    border:none;
+}
+/* queremos cambiar el color del boton cuando nos ponemos encima. Utilizamos el hover como en los enlaces. Ademas tambien cambiaremos el tipo de cursor */
+input[type="submit"]:hover{
+    background:orangered;
+    color: white;
+    /* cambiamos el cursor */
+    cursor:pointer;
+
+}
+/* modificamos los enunciados */
+label{
+    font-size: 12px;
+    display:block;
+}
+
+/* para evitar que el text area puedas hacerlo mas grande o mas pequeño */
+textarea{
+    resize:vertical;
+    max-height: 200px;
+    min-height: 100px;  
+}
+/* añadimos la imagen del sobrecito de correo en su campo corresponfiente */
+input[type="email"]{
+    background-image: url("imagenes/email.png");
+    /* estos son los parametros:  */
+    /* background-size: contain; si ponemos contain la imagen cogera todo el espacio del contyenedo, por lo tanto no valdra que pongamos parametros parecidos al padding como es el caso de los siguientes parametros x/y. background repeat es para que no se repita la imagen en el contenedor */
+    background-repeat: no-repeat;
+    background-position-x: 98%;
+    background-position-y: 50%;
+    /* le ponemos una medida a la foto */
+    background-size:7%;
+}

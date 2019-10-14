@@ -1,0 +1,135 @@
+
+
+/* ----------------EMPEZAMOS POR PANTALLA GRANDE----------- */
+
+
+*{
+	margin:10px;
+	padding:10px;
+	-webkit-box-sizing:border-box;
+	box-sizing:border-box;
+
+}
+
+
+
+.padre{
+	/* flexionamos el padre de todo para distribuir en forma de flex todo los elementos. Estos se ponen uno al lado del otro.*/
+	display: flex;
+	/* los distribuimos en columna otra opcion seria "flex-flow: column nowrap" */
+	flex-direction: column;
+}
+/* -------------------------CABECERA------------------------------------- */
+.header{
+	background: #000;
+	/* flexionamos al padre para distribuir sus elementos */
+	display: flex;
+	/* COMO SE DEBEN DSITRIBUIR */
+	flex-flow: column nowrap;
+}
+
+.menu{
+	background: #5893d4;
+	display: flex;
+	height:100px;
+	align-items:center;
+}
+
+	/* FLEX-GROW: con este hacemos una reparticion equitativa. del espacio que hay. El .logo y .social se quedan un espacio de lo disponible y el .nav se queda 4 espacios */
+	.logo{
+		background: #f7b633;
+		flex-grow: 1;
+		height:30px;
+	}
+	.nav{
+		background: #f7b633;
+		flex-grow: 4;
+		height:30px;
+	}
+	.social{
+		background: #f7b633;
+		flex-grow: 1;
+		height:30px;
+	}
+
+/* -----------------------NAVEGADOR CABECERA----------------------------- */
+.texto-principal{
+	background: #f07b3f;
+}
+	h1{
+		background:#ffd460;
+	}
+
+/* ---------------------------PARTE PRINCIPAL-------------------------- */
+.section{
+	background: #000;
+	display: flex;
+	
+}
+	/* con flex grow dividimos proporcionalmente los articulos(flex-grow:2) de la aside (flex-grow:1). */
+	.articulos{
+		background: #4e4e6a;
+		flex-grow: 2;
+		display: flex;
+		flex-flow: row wrap;
+	
+	}
+		/* para repartir dentro de articulos los articulo de el navegacion vuelvo a utilizar flex-grow */
+		.articulo{
+			background: #1f6cb0;
+			/* el primer numero es el grow, el segundo el rin, y el tercero el basis. C */
+			flex: 1 1 40%;
+		}
+		.navegacion{
+			background: #70a3c4;
+			flex: 1 1 100%;
+		}
+	.aside{
+		flex-grow: 1;
+		background: #f73f52;
+	}
+		.publicidad{
+			background: #ffea85;
+		}
+
+
+/* flex a la caja del pie y justify-content para que la caja de dentro la amarilla se centre */
+.footer{
+	background: #000;
+	display: flex;
+	justify-content: center;	
+}
+
+	.pie{
+		background:#e6af2e;
+		width:300px;
+	}
+
+/* MEDIA QUERIES */
+
+@media all and (max-width: 800px){
+	.section{
+		flex-direction: column;
+	}
+	
+	.menu{
+		flex-direction: column;
+		/* si queremos que los containers se adapten a los elementos que hay dentro le ponemos auto al width o height */
+		height: auto;
+	}
+
+	.aside{
+		display: flex;
+		justify-content: center;
+	}
+}
+
+@media all and (max-width: 600px){
+	.articulos{
+		flex-direction: column;
+		
+	}
+
+}
+
+

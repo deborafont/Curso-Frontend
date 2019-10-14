@@ -1,0 +1,207 @@
+*{
+    margin: 0;
+    padding:0;
+}
+body{
+    background-color: #ccc;
+}
+.catalogo{
+    /* background-color: white; */
+    width: 100%;
+}
+
+/* ---------------------PARTE PRINCIPAL----------------- */
+/* dimensionamos todo menos el navegador, lo centramos y le damos color al fondo */
+main{
+    width: 80%;
+    margin:0 auto;
+    background-color: white;
+    position:relative;
+    padding:40px; 
+}
+/* ---------------NAVEGADOR------------------ */
+/* dimensionamos el container de navegador le ponemos un color de fondo y mayusculas. Además centramos el contenido */
+.navegador{
+    width: 100%;
+    background-color: rgb(194, 162, 83);
+    text-transform: uppercase;
+    text-align: center;
+}
+/* quitamos la decoracion de la lista (las bolitas) */
+ul.menu-navegador, ul{
+    list-style: none;
+}
+/* disponemos los elementos de forma horizontal uno al lado del otro */
+.menu-navegador li{
+    display:inline-block;
+    padding: 20px;
+}
+/* le ponemos un borde al elemento del medio menos en el top y el bottom */
+.menu-navegador li:nth-child(2){
+    border: 1px solid white;
+    border-bottom: none;
+    border-top: none;
+}
+/* ponemos la letras de color blanco y quitamos el subrayado */
+.menu-navegador li a{
+    color:white;
+    text-decoration: none;
+}
+
+/* ----------------------------ARTICULO----------------------- */
+
+
+/* -------------------------cabecera----------------- */
+/* ponemos fondo de color una anchura porcentual y lo centramos */
+.cabecera-articulo{
+    background-color: rgb(224, 203, 189);
+    width: 96%;
+    margin: 10px auto;
+}
+/* tamaño de la letra de la cabecera y un poco de padding para el parrafo tambien */
+.cabecera-articulo h1{
+    font-size: 2.5rem;
+}
+.cabecera-articulo p, .cabecera-articulo h1{
+    padding:20px;
+}
+
+/* ----------------------introduccion--------------------------- */
+/* le damos color, padding y justificamos el texto del primer parrafo de la introduccion */
+.introduccion p:first-child{
+    color: rgb(194, 162, 83);
+    padding:10px 60px 20px 60px;
+    text-align: justify;
+}
+/* le damos padding al segundo parrafo de la introduccion */
+.introduccion  {
+    padding: 10px;
+}
+
+/* ----------------------citas con comillas---------------- */
+/* le damos color al fondo, un pequeño borde izquierdo, padding y margen a los blockquote */
+.cita{
+    width: 40%;
+    margin:2rem auto 1rem auto;
+    padding:10px;
+    background-color: rgb(231, 231, 231);
+    border-left: 2px solid rgb(146, 142, 142);
+/* para poner las comillas en los blockquote */    
+    quotes: "\201C" "\201D" "\2018" "\2019";
+}
+
+/* para poner las comillas en los blockquote */
+.cita:after{
+/* atributo de los blockcuote */
+    content: close-quote;
+    line-height: 0.1em;
+    margin-right:0.25em;
+    vertical-align: -0.4em; 
+    font-size: 3rem;
+    color: rgb(146, 142, 142);
+}
+blockquote:before{
+    content: open-quote;
+    line-height: 0.1em;
+    margin-right:0.25em;
+    vertical-align: -0.4em;
+    font-size: 3rem;
+    color: rgb(146, 142, 142);
+}
+
+/* ----------------------articulos principales------------------ */
+
+.articulos-principales h2, .articulos-principales p,.articulos-principales-tecnologias p{
+    padding: 10px 0;
+    
+}
+/* dimensionamos la imagen y la centramos */
+.img-cereales img{
+    width: 40%;
+    margin-left: 310px;
+}
+.img-cereales figcaption{
+    margin-left: 352px;
+}
+/* enlaces */
+.enlaces-extras{
+    padding: 40px;
+    border: 1px solid black;
+    border-bottom: none;
+    border-top: none;
+    display: inline-block;
+    margin: 20px 20px 20px 190px ;
+}
+
+.enlaces-extras li{
+    padding:10px
+}
+a:link {
+    color:green;
+  }
+/* -----------------------------pie---------------------- */
+footer{
+    width: 80%;
+    margin:0 auto;
+    padding: 20px;
+    background-color:  rgb(194, 162, 83);
+    position: relative;
+}
+.pie p{
+    padding: 10px;
+}
+.pie img{
+    width: 6rem;
+    position: absolute;
+    left: 30px;
+    top:40px;
+}
+.pie div{
+    color:white;
+    margin-left: 150px;
+
+
+}
+/* --------------------------------CATALOGO---------- */
+
+.lista-catalogo{
+    list-style-type: upper-alpha; 
+}
+.lista-catalogo li,.lista-catalogo ol,.lista-catalogo ul{
+    padding: 10px;
+}
+.container-catalogo{
+    border: 2px solid  rgb(194, 162, 83);
+    padding: 40px;
+    width: 60%;
+    margin: 0 auto;
+}
+.cabecera-catalogo h1, .cabecera-tecnologias h1{
+    text-align: center;
+    padding: 20px;
+}
+.catalogo ul li{
+    color: rgb(194, 162, 83);
+}
+.catalogo ul img{
+    vertical-align: middle;
+}
+
+
+/* --------------------------TECNOLOGIAS------------------------ */
+
+section.articulos-principales-tecnologias h2{
+    text-decoration: underline dotted black;
+}
+
+.articulos-principales-tecnologias p::first-line{
+    text-indent: 50px;
+}
+
+.articulos-principales-tecnologia p{
+    text-align: justify
+}
+
+
+
+

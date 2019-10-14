@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Dados</title>
+
+    <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        /* border: 1px red solid; */
+    }
+
+    html, body{
+        height: 100%;
+    }
+
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .dado{
+        width: 104px;
+        height: 104px;
+        margin:16px;
+        padding: 1px;
+        background-color: orange;
+        border-radius: 10%;
+    }
+
+    .punto{
+        display:block;
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        margin: 4px;
+        background-color: #000;
+    }
+
+        span.punto{
+            
+        }
+
+    /* ----------------------DADO UNO------------------------- */
+
+    .dado{
+        display:flex;
+    }
+    .dado.uno .punto{
+        /* centramos el punto del dado, posicion 1 */
+        margin: auto;
+    }
+    
+    /* ----------------------DADO DOS------------------------- */
+    .dos span:nth-child(2){
+        /* posicionamos los puntos de la posicion de dado2 */
+       margin:auto 4px 4px auto;
+    }
+
+    /* ----------------------DADO TRES------------------------- */
+    .tres span:nth-child(2){
+        /* posicionamos los puntos de la posicion de dado2 */
+       margin:auto;
+    }
+
+    .tres span:nth-child(3){
+        /* posicionamos los puntos de la posicion de dado2 */
+        margin:auto 4px 4px auto;
+    }
+
+    /* ----------------------DADO CUATRO------------------------ */
+
+    .cuatro {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .columna{
+       display:flex;
+       flex-direction: column;
+       justify-content: space-between;
+    }
+
+    .cuatro .columna 
+
+    /* ----------------------DADO CINCO Y SEIS------------------------ */
+
+    .cinco, .seis{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cinco .columna-centro{
+        margin: auto;
+    }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="dado uno">
+        <span class="punto"></span>
+    </div>
+
+    <div class="dado dos">
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+
+    <div class="dado tres">
+        <span class="punto"></span>
+        <span class="punto"></span>
+        <span class="punto"></span>
+    </div>
+
+    <div class="dado cuatro">
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+    </div>
+
+    <div class="dado cinco">
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+        <div class="columna-centro">
+            <span class="punto"></span>
+        </div>
+
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+    </div>
+
+    <div class="dado seis">
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+        <div class="columna">
+            <span class="punto"></span>
+            <span class="punto"></span>
+            <span class="punto"></span>
+        </div>
+
+    </div>
+</body>
+</html>

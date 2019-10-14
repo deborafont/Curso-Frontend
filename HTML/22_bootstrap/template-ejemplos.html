@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <title>Titulo del sitio</title>
+
+     <style>
+       div{
+         border:1px black solid;
+       }
+
+       .row{
+         height: 100px;
+       }
+      </style>
+  </head>
+  <body class="container">
+
+
+    <!-- ---------------------------------------REPARTICION AUTOMATICA-------------------------------------- -->
+      <div class="row">
+        <!-- si ponemos solo col hara una reparticion automatica -->
+            <div class="col bg-success"><img src="" alt="">Fila1 Columna1</div>
+            <div class="col-5 bg-primary">Fila1 Columna2</div>
+            <div class="col bg-success  ">Fila1 Columna3</div>
+      </div>
+
+      <div class="row">
+            <div class="col-5 bg-primary "><img src="" alt="">Fila2 Columna1</div>
+            <div class="col bg-success">Fila2 Columna2</div>
+            <div class="col bg-primary ">Fila2 Columna3</div>
+      </div>
+    </br>
+<!-- ------------------------------------------ADAPTACION DE PANTALLAS---------------------------- -->
+      <div class="row">
+            <!-- primero hara columnas de 6 espacios cada una y cuando la pantalla sea mas pequeña hara 3 espacios por columna -->
+              <div class="col-6 col-sm-3 bg-success"><img src="" alt="">Fila1 Columna1</div>
+              <div class="col-6 col-sm-3 bg-primary">Fila1 Columna2</div>
+            <!-- si queremos hacer un salto de linea seria la creamos un div con class="w-100" -->
+              <div class="w-100"></div>
+              <div class="col-6 col-sm-3 bg-success"><img src="" alt="">Fila2 Columna1</div>
+              <div class="col-6 col-sm-3 bg-primary">Fila2 Columna2</div>
+        </div>
+      </br>
+<!-- ---------------------------------ESPACIOS ENTRE COLUMNAS----------------------------------------- -->
+        <div class="row">
+              <div class="col-md-4 bg-success"><img src="" alt="">Fila1 Columna1</div>
+              <!-- para poner un espacio entre columna podemos usar el comando offset, le decimos en que tamaño de pantalla queremos que afecte y luego la cantidad de espacio que quieres dejar -->
+              <div class="col-md-4 offset-md-3 bg-primary">Fila1 Columna2</div>
+        </div>
+
+        <div class="row">
+                <div class="col-md-4 bg-success"><img src="" alt="">Fila1 Columna1</div>
+                <div class="col-md-4 offset-md-4 bg-primary ">Fila1 Columna2</div>
+          </div>
+
+          <div class="row">
+                <div class="col-md-3 bg-primary offset-md-3"><img src="" alt="">Fila2 Columna1</div>
+                <div class="col-md-3 bg-success offset-md-3">Fila2 Columna2</div>
+          </div>
+
+          <div class="row">
+                <div class="col-md-6 bg-success offset-md-3  ">Fila1 Columna3</div>
+          </div>
+
+        </br>
+<!-- -------------------------------------------MARGENES----------------------------------------------- -->
+
+          <div class="row">
+            <!-- para dejar margenes tenemos el comando mr o ml (dependiendo si lo queremos poner a la derecha o a la izquierda) auto -->
+                <div class="col-md-4 ml-auto bg-primary "><img src="" alt="">Fila2 Columna1</div>
+                <div class="col-md-4 mr-auto bg-success ">Fila2 Columna2</div>
+          </div>
+
+        </br>
+
+
+<!-- ------------------------------------------------ORDEN------------------------------------------- -->
+
+      <div class="row">
+          <!-- podemos elegir el orden pero hay que especificarselo a todos los elementos sino se queda loco -->
+            <div class="col order-3 bg-primary "><img src="" alt="">Fila2 Columna1</div>
+            <div class="col order-2 bg-success">Fila2 Columna2</div>
+            <div class="col order-1 bg-primary ">Fila2 Columna3</div>
+      </div>
+
+      <div class="row">
+          <!-- se puede poner un elemento el primero con el parametro order-first, el ultimo con order-last -->
+            <div class="col order-last bg-primary "><img src="" alt="">Fila2 Columna1</div>
+            <div class="col order-2 bg-success">Fila2 Columna2</div>
+            <div class="col order-first bg-primary ">Fila2 Columna3</div>
+      </div>
+
+    </BR>
+      <!-- --------------------------------------POSICIONAR VERTICALMENTE----------------------------- -->
+
+    <!-- posicionamos las filas dentro de su anchura, arriba, centro, abajo -->
+      <div class="row align-items-start">
+            <div class="col bg-primary "><img src="" alt="">Primera</div>
+            <div class="col bg-success">Segunda</div>
+            <div class="col bg-primary ">Tercera</div>
+      </div>
+
+      <div class="row align-items-center">
+          <div class="col bg-primary "><img src="" alt="">Primera</div>
+          <div class="col bg-success">Segunda</div>
+          <div class="col bg-primary ">Tercera</div>
+      </div>
+
+      <div class="row align-items-end">
+          <div class="col bg-primary "><img src="" alt="">Primera</div>
+          <div class="col bg-success">Segunda</div>
+          <div class="col bg-primary ">Tercera</div>
+    </div>
+
+  </br>
+    <!-- --------------------------------------------------------------------------------------------- -->
+  
+    <!-- posicionamos los elementos de la fila por separado,  dentro de su anchura, arriba, centro, abajo -->
+    <div class="row">
+        <div class="col align-self-start bg-primary "><img src="" alt="">Primera</div>
+        <div class="col align-self-center bg-success">Segunda</div>
+        <div class="col align-self-end bg-primary ">Tercera</div>
+  </div>
+
+  <!-- ---------------------------------------------------------------------------------------------------- -->
+
+      <div class="d-flex justify-content-star">
+        <div class="p-2 bg-primary "><img src="" alt="">Primera</div>
+        <div class="p-2 bg-success">Segunda</div>
+        <div class="p-2 bg-primary ">Tercera</div>
+  </div>
+
+</br>
+  <div class="d-flex  justify-content-center">
+      <div class="p-2 bg-primary "><img src="" alt="">Primera</div>
+      <div class="p-2  bg-success">Segunda</div>
+      <div class="p-2 bg-primary ">Tercera</div>
+</div>
+
+</br>
+<div class="d-flex justify-content-end">
+    <div class="p-2 bg-primary "><img src="" alt="">Primera</div>
+    <div class="p-2 bg-success">Segunda</div>
+    <div class="p-2 bg-primary ">Tercera</div>
+</div>
+
+</br>
+<div class="d-flex justify-content-around">
+    <div class="p-2  bg-primary "><img src="" alt="">Primera</div>
+    <div class="p-2  bg-success">Segunda</div>
+    <div class="p-2 bg-primary ">Tercera</div>
+</div>
+
+</br>
+<div class="d-flex  justify-content-between">
+    <div class="p-2  bg-primary "><img src="" alt="">Primera</div>
+    <div class="p-2 bg-success">Segunda</div>
+    <div class="p-2 bg-primary ">Tercera</div>
+</div>
+
+
+
+<!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> -->
+
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

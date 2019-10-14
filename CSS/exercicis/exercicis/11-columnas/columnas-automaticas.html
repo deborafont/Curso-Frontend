@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Columnas automaticas</title>
+
+    <style>
+    
+    /* -------------------------------ESTRUCTURA------------------------------------- */
+    main{
+        max-width: 1200px; 
+        padding: 1rem; 
+        margin: 0 auto;
+    }
+
+    h1, p, img{
+        padding-bottom: 1rem;
+    }
+
+    img{
+        width: 100%
+    }
+
+    /* reparte el texto por parrafos. Los tres parrafos se reparten en el numero de columnas que le pongas */
+    /* p{
+        column-count: 4;
+    } */
+
+    /* si lo hacemos con section ordena todos los elementos en el numero de columnas quer le hayamos dicho */
+    section{
+        column-count: 2;
+        /* ponemos una separacion entre columnas */
+        column-gap: 40px;
+        /* ponemos una linea punteada naranja entre las columnas */
+        column-rule: 4px dotted orange;
+        /* ponemos un tamaño de columna y cuando vamos reduciendo la pantalla pasa de tres columnas a dos y de dos a un. Es como un media queries */
+        column-width: 300px;
+    }
+
+    h1{
+        /* hacemos que los h1 no entren dentro de las columnas. que salga del flujo */
+        column-span: all;
+    }
+
+    /* -------------------------------TIPOFRAFIA------------------------------------- */
+
+    html{font-size: 18px }
+    body{font-family: Arial, Helvetica, sans-serif}
+    h1{text-align: center; font-size: 3rem;}
+    p{text-align: justify;}
+    
+    /* -----------------------------------ESTETICA--------------------------------- */
+
+
+
+    </style>
+
+</head>
+<body>
+    
+    <main>
+        <section>
+            <h1>Kike una pregunta</h1>
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro labore id temporibus accusantium vel molestias consequuntur facilis rerum incidunt! Sequi, dolorum quod nisi quo repudiandae pariatur numquam nesciunt ipsum consequatur!</p>
+
+            <!-- <img src="" alt=""> -->
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore voluptatibus quod provident dolorem maiores, autem qui dicta beatae perspiciatis quae atque laudantium, velit vel consectetur saepe impedit debitis, placeat necessitatibus?Repellendus repudiandae autem a optio nemo obcaecati placeat inventore vitae minus, adipisci, nesciunt commodi saepe iste necessitatibus. Repellendus alias, debitis distinctio magni accusamus doloremque facilis saepe pariatur molestiae esse eligendi?</p>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque maxime beatae quibusdam sequi, consequatur optio obcaecati distinctio, magni omnis reprehenderit amet facere, accusamus iure et qui dolores dolorem aliquam quasi.
+            Architecto corporis ex quia corrupti aliquid suscipit ipsum totam delectus in, natus magni obcaecati autem consectetur. Accusantium necessitatibus nihil pariatur odit officiis, blanditiis maiores similique et, repudiandae rerum voluptatem vero?
+            Quo explicabo atque recusandae autem aperiam necessitatibus, in optio non sunt voluptate sit dignissimos ad vero odit amet perferendis consequatur voluptatibus labore voluptatem. Vero libero repellat tempore voluptates, quibusdam necessitatibus.</p>
+        </section>
+
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+/***-------------- Estructura --------------***/
+
+header,
+nav,
+main,
+aside,
+footer {
+  max-width: 600px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+img{
+    width: 90%;
+    display: block;
+    margin:20px auto;
+
+}
+ 
+/***-------------- Tipografia --------------***/
+
+
+
+
+/***-------------- Estetica --------------***/
+
+body {
+background: #444;
+}
+
+
+header,
+nav,
+main,
+aside,
+footer,{
+    background: #fef9ff;
+}
+.container-principal{
+    background: #fef9ff;
+    width: 70%;
+    margin: 0 auto;
+}
+.container{
+    background-color: white;
+    padding: 40px;
+    margin: 0 80px 80px 80px;
+    position: relative;
+    box-shadow: 0px 0px 5px 0px #000000;
+}
+.letra-gris{
+    color: grey;
+    font-size: 1rem;
+    font-style: italic;
+    padding: 10px;
+    text-align: center;
+}
+.letra-mayu{
+    color: black;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    padding: 10px;
+    text-align: center;
+    font-variant: 
+}
+.letra-autor{
+    font-size: 3rem;
+    text-transform: uppercase;
+    padding: 10px 10px 40px 10px;
+    text-align: center;
+}
+.texto-principal::first-letter { 
+    font-size: 300%;
+    float:left;
+    margin:-5px 5px 0 0;
+}
+a, .letra-autor, .texto-principal::first-letter{
+    color: red;
+}
+.primera-letra{text-align: justify;}
+
+/* amaguem totes les imatges del nav menys a la pagina index */
+nav img{display: none;}
+.index nav img{display: block;}
+
+/* mostrem les imatges del nav */
+/* .pag01 nav img {display: inline;} */
+
+/* mostrem a la pagina 2 la imatge 2, mostrem a la pagina 3 la imatge 3,mostrem a la pagina 4 la imatge 4 */
+.pag01 nav div:nth-child(1) img {display:inline;}
+.pag02 nav div:nth-child(2) img {display: inline;}
+.pag03 nav div:nth-child(3) img {display: inline;}
+.pag04 nav div:nth-child(4) img {display: inline;} 
+

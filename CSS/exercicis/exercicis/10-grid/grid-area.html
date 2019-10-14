@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid Area, imagen contexto encima</title>
+
+    <style>
+        main{
+            margin: 0 auto;
+            display:grid;
+            width: 800px;
+            /* creamos 4 columnas */
+            grid-template-columns: repeat(4, 200px);
+            /* creamos 4 filas */
+            grid-template-rows: repeat(4,200px); 
+            align-items: flex-end;
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            /* object-fit¡:cover ya por defecto es la imagen centrada */
+            /* object-position: center; */
+        }
+
+        p{ 
+            margin: 0;
+            padding: 0 10px;
+            background-color: rgb(138, 43, 226, 0.5);
+            color: aliceblue;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        /* marcamos las areas, lo que queremos que ocupe cada una y donde. Eligiendo a cada hijo tanto de imagen como parrafo le damos la misma area para que el parrago se sobre ponga */
+        img:nth-of-type(1),p:nth-of-type(1) { grid-area:1/1/4/2 ;}
+        img:nth-of-type(2),p:nth-of-type(2) { grid-area:1/2/2/5 ;}
+        img:nth-of-type(3),p:nth-of-type(3) { grid-area:2/2/4/4 ;}
+        img:nth-of-type(4),p:nth-of-type(4) { grid-area:2/4/5/5 ;}
+        img:nth-of-type(5),p:nth-of-type(5) { grid-area:4/1/5/4 ;}
+    </style>
+
+</head>
+<body>
+    <main>
+            <!-- para poder sobre poner el parrago encima de la imagen tienes que poner la imagen antes del texto -->
+            <img src="img/nature-2609647_640.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptas impedit error, asperiores quidem minus possimus cupiditate? Nulla cupiditate perspiciatis alias ullam earum molestiae, ducimus deserunt dolores non laborum maiores!</p>
+              
+            <img src="/img/nature-2609647_640.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptas impedit error, asperiores quidem minus possimus cupiditate? Nulla cupiditate perspiciatis alias ullam earum molestiae, ducimus deserunt dolores non laborum maiores!</p>
+            
+            <img src="/img/nature-2609647_640.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptas impedit error, asperiores quidem minus possimus cupiditate? Nulla cupiditate perspiciatis alias ullam earum molestiae, ducimus deserunt dolores non laborum maiores!</p>
+            
+            <img src="/img/nature-2609647_640.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptas impedit error, asperiores quidem minus possimus cupiditate? Nulla cupiditate perspiciatis alias ullam earum molestiae, ducimus deserunt dolores non laborum maiores!</p>
+            
+            <img src="/img/nature-2609647_640.jpg" alt="">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis voluptas impedit error, asperiores quidem minus possimus cupiditate? Nulla cupiditate perspiciatis alias ullam earum molestiae, ducimus deserunt dolores non laborum maiores!</p>
+    </main>
+</body>
+</html>

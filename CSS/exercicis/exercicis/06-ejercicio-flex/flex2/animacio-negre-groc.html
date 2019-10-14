@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Felx negre groc</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+
+        div{
+            width: 100%;
+            height: 50vh;
+        }
+
+        .negre{
+            background-color: black;
+            color:yellow;
+            position: relative;
+        }
+
+        .groc{
+            text-align: center;
+            background-color: yellow;
+        }
+
+        .negre p{
+            width: 100%;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 3rem;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .groc p{
+            text-transform: uppercase;
+            font-size: 3rem;
+        }
+
+        p{
+            /* lo que queremos animar son las palabras por lo tanto la animacion tiene que recaer en el paragrafo */
+            animation: subirbajar   1s 0.6s infinite alternate  ease-in, 
+    /* en este caso la vamos hacer linial ya que no necesitamos una aceleracion */
+                izqder 2.5s 0.6s linear infinite alternate;
+        }
+
+        @keyframes subirbajar{
+    0%{
+        transform:scale(1,1) translateY(-400px);
+        /* -webkit-transform: translateY(-630px);
+        -moz-transform: translateY(-630px);
+        -ms-transform: translateY(-630px);
+        -o-transform: translateY(-630px); */
+    }
+
+    70%{
+        transform: scale(0.8,1.15) translateY(-200px);
+        /* -webkit-transform: translateY(-400px);
+        -moz-transform: translateY(-400px);
+        -ms-transform: translateY(-400px);
+        -o-transform: translateY(-400px); */
+    }
+    
+    100%{
+        transform: scale(1.2,0.7) translateY(100px);
+        /* -webkit-transform: translateY(-100px);
+        -moz-transform: translateY(-100px);
+        -ms-transform: translateY(-100px);
+        -o-transform: translateY(-100px); */
+    }
+}
+
+        @keyframes izqder{
+    0%{
+        left: -4px;
+    }
+
+    100%{
+        left: 500px;
+    }
+}
+
+@keyframes rotar{
+    0%{
+        transform: rotate(-20deg);
+    }
+
+    100%{
+        transform: rotate(-960deg);
+    }
+
+}
+    </style>
+</head>
+
+<body>
+    <main>
+        <div class="negre">
+            <p>Negre</p>
+        </div>
+
+        <div class="groc">
+            <p>Groc</p>
+        </div>
+    </main>
+</body>
+
+</html>

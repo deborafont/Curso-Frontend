@@ -1,0 +1,34 @@
+body{
+
+    font-family: 'Courier New', Courier, monospace;
+ }
+
+ p {
+    
+     font-size: 1em;
+
+
+ } 
+h1,small {
+     color:rgb(171, 100, 88); 
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif  ;
+   
+ }
+
+ h1{
+     text-align: center;
+     background-color: blue;
+ }
+
+
+ small{
+     font-size: 0.80em;
+
+ }
+h2{
+
+    background-color: red
+    font-size: 2em;
+
+}
+

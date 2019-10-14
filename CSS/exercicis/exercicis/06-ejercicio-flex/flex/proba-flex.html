@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!-- propiedad dir (direction de lectura). De izquierda a derecha (ltr, es el predeterminado). De derecha a izquierda (rtl). -->
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Proba flex</title>
+
+    <style>
+        /* aplicamos inline-flex en el padre "main" para que los elementos se posicionen uno al lado del otro */
+        /* main{display: inline-flex;} */
+
+        /* aplicamos flex en el display y en flex-direction la direccion que quremos que haga el flex. Opciones (Row es por defecto, row-reverse de izquierda a derecha, colum en columna el primer item arriba, column-reverse en columna el primer item bajo */
+        /* main{ 
+            display: flex;
+            flex-direction: row;
+            } */
+
+            /* cuando hacemos mas pequeña la pantalla los elementos tienen el mismo tamaño y posiciona el 3 abajo si ya no cabe. Y nowrap es justo lo contrario. Cuando hacemos mas pequeña la pantalla en no baja ningun elemento, les cambia el tamaño para que sigan todo en el primer fila */
+
+            /* main{ 
+                display: flex;
+                flex-wrap: nowrap;
+            }  */
+
+            main{ 
+            display: flex;
+            flex-wrap: wrap;
+            height: 400px;
+            /* redistribuir los elemntos horizontalmente */
+            justify-content: space-evenly;
+            /* redistribuir los elemntos horizontalmente. Stretch es por defecto. */
+            align-items: baseline;
+            } 
+
+        body, section{padding: 20px}
+
+        section{
+            width: 100px;
+            background-color: orange;
+            border:1px black solid;
+        }
+    
+    </style>
+</head>
+
+<body>   
+    <main>
+        <section style="font-size: 65px;">
+            Flex Item 1
+        </section>
+    
+        <section style="font-size: 50px;">
+            Flex Item 2
+        </section>
+    
+        <section style="font-size: 40px;">
+            Flex Item 3
+        </section>
+
+        <section style="font-size: 30px;">
+            Flex Item 4
+        </section>
+    
+        <section style="font-size: 20px;">
+            Flex Item 5
+        </section>
+    
+        <section style="font-size: 10px;">
+            Flex Item 6
+        </section>
+    </main>
+</body>
+</html>

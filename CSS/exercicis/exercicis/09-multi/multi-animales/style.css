@@ -1,0 +1,36 @@
+*{
+    /* centramos todo */
+    margin: auto;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
+    /* border: 1px black solid; */
+}
+
+p{
+    background: pink;  
+    width: 50%; 
+}
+
+div{
+    padding: 10px;
+    background: pink;
+}
+
+/* lo disponemos todo en columnas(divs de foto y texto)  */
+.columna{
+    display: flex;
+    flex-direction: column;
+}
+
+/* ponemos al lado la foto y el texto */
+.fila{
+    display: flex;
+    flex-direction: row;
+}
+
+/* con esto intercalamos texto foto, foto texto */
+.columna div:nth-child(odd){
+    flex-direction: row-reverse;
+    
+}

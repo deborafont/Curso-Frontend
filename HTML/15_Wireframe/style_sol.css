@@ -1,0 +1,176 @@
+
+
+/* hacemos el reset para el navegador. Y ponemos medidas a cada conmtainer */
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/* -----------------LA CABECERA----------------------- */
+header{
+    width: 1000px;
+    height: 120px;
+    background-color: #444;
+    margin:20px auto;
+    position: relative;
+    /* ponemos una imagen de fondo en la cabecera con un degradado que va desde la foto al color blanco */
+    /* background-image: */
+    background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)),url(/image/nuclear-4168906_960_720.jpg);
+    background-size: cover;
+    background-position: 50% 59%;
+}
+/* logo */
+.logo{
+    width: 200px;
+    height: 60px;
+    /* background-color: #ccc; */
+    /* ponemos posicion absoluta porque queremos que la referencia sea su padre, sino pondriamos relativa(si quisieramos que el viewport fuera nuestro referente).Y la posiscionamos con el top y el left*/
+    position: absolute;
+    /* centramos el container del logo */
+    top:30px;
+    left: 30px;
+    /* aplicamos tipografia de google y centramos la imagen */
+    font-family: 'Press Start 2P', cursive;
+    font-size: 5rem;
+    text-align: center;
+    line-height: 55px;
+}
+
+/* zona redes seciales */
+.redes{
+    /* treiem el fons perque les rodones de redes sociales  */
+    /* background-color: #ccc; */
+    position: absolute;
+    /* centramos el container de los iconos de redes sociales */
+    top:40px;
+    right: 20px;
+    width: 141px;
+    height: 41px;
+}
+/* dimensionamos y le damos la forma de redonda a los iconos de redes sociales */
+.icono1, .icono2, .icono3{
+    width: 42px;
+    height: 42px;
+    margin-right: 2px;
+    /* amb aquest parametre aconseguim que siguin rodones */
+    border-radius: 50%;
+    /* background-color: #aaa; */
+    /* ara surten en vertical per tan farem inline-block per posicionar-les en horitzontal */
+    display: inline-block;
+}
+/* hemos añadido los iconos de facebook y de mas */
+.icono1, .icono2, .icono3{
+    /* centramos el icono dentro de la redonda horizontalmente*/
+    text-align: center;
+     /* centramos el icono dentro de la redonda verticalmente*/
+    line-height: 42px;
+}
+/* fonde de color para las redondas de los iconos */
+.icono1{
+    background-color: cornflowerblue;
+}
+.icono2{
+    background-color: darkgreen;
+}
+.icono3{
+    background-color: darkviolet;
+}
+
+/* ------------------------NAVEGADOR------------------------- */
+nav{
+    /* 02 para eliminar el fondo de la separacion entre los elementos primero ponemos la fuente 0 y luego en la clase potones el tamaño de letra que queramos */
+    font-size: 0;
+    width: 1000px;
+    height: 48px;
+    /* cuando ya tenemos los elementos de navegacion hechos quitamos el fondo para que no se vea */
+    /* background-color: #aaaaaa; */
+    margin:20px auto;
+    position: relative;
+}
+.botones{
+    /* 01 despres de posar a zero el tamany de font en el container nav  */
+    font-size: 1rem;
+    width: 196px;
+    height: 48px;
+    background-color: #333;
+    /* el posicionem un al costat de l'altre */
+    display:inline-block;
+}
+/* Margenes botones 2 y 4. Nos sigue quedando unos pequeños margenes entre los elementos de las puntas asi que les aplicamos unos margenes a los elementos pares */
+.botones:nth-child(even){
+    margin:0 5px; 
+}
+
+/* ---------------------------ARTICULOS IMPORTANTES------------------------- */
+.top{
+    font-size: 0px;
+    width: 1000px;
+    height: 192px;
+    /* 02 quitamos el fondo del container para que se vea correctamente */
+    /* background-color: #888; */
+    margin:20px auto;
+    position: relative;
+}
+/* esta es la parte de los articulos mas importantes. Vamos a trazar los elementos que van a ir dentro. Tres cajas para ser mas precisos */
+.top article{
+    /* hacemos otyra vez el truquito de la fontsize para quitar los margenes que nos quedan a los lados, ademas de ponerle unos margenes a los pares */
+    font-size:1rem;
+    width: 330px;
+    height:192px ;
+    background-color: #000;
+    /* posicionamos las tres cajas horizontalmente una al lado de la otra */
+    display: inline-block;
+}
+.top article:nth-child(even){
+    margin:0 5px; 
+}
+/* ----------------------------PARTE CENTRAL DE LA PAGINA------------------/ */
+/* le damos medidas al container de la parte central donde iran dos asides a los lados */
+.central{
+    width: 1000px;
+    height: 450px;
+    /* background-color: #aaa; */
+    margin:auto;
+    position: relative;
+    background-image:url(/image/nuclear-4168906_960_720.jpg);
+    /* efecto de que la imagen se quede fija aunque agamos scroll. Quitamos los colores de fondo para que se vea la imagen */
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+aside.izq,aside.der{
+    width: 200px;
+    height: 450px;
+    position: absolute;
+    /* background-color: #ccc; */
+}
+aside.der{
+    right: 0;
+}
+aside.izq{
+    right: 0;
+}
+.art-central{
+    position: absolute;
+    width: 600px;
+    height: 450px;
+    /* background-color: #888; */
+    left:200px;
+
+}
+
+/* ------------------------------------PIE DE PAGINA--------------------------------- */
+/* dimensionamos el copntainer del pie */
+.pie{
+    width: 1000px;
+    height: 70px;
+    background-color: #888;
+    margin:20px auto;
+    position: relative;
+}
+
+
+
+
+
+

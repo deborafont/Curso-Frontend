@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* un estandar que tiene que estar en todos las paginas */
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1{ font-size: 3rem;}
+    h2{ font-size: 2rem;}
+    P{ font-size: 1rem;}
+
+
+
+    /* --------------------------ESTETICA------------------------------ */
+   
+    nav{
+        padding:1rem;
+        text-align:center;
+
+    }
+    nav li a{
+        padding: .5rem 1rem;
+        display:block;
+    }
+
+
+    nav ul{
+        background: #333;
+        display: flex;
+        flex-direction: column;
+    }
+    nav li:last-child{
+        border-right: 2px orange solid;
+    }
+
+    nav li:first-child{
+        border-left: 2px orange solid;
+    }
+    nav li{
+        border: 1px orange solid;
+        list-style: none;
+        /* flex:1 0 auto; */
+    }
+
+    nav li a{
+        color:white;
+        text-decoration: none;
+    }
+
+    nav li a:hover{
+        background: orange;
+        color: white;
+    }
+
+    /* cuando la pantalla es de movil el menu se pone en en vertical  */
+    @media (min-width: 750px) {
+
+        nav ul{flex-direction: row;}
+         /* ponemos el menu en el lado izquierdo de la pantalla */
+        ul.esquerra{justify-content: flex-start;}
+         /* ponemos el menu en el centro de la pantalla */
+        ul.centre{justify-content: center;}
+         /* ponemos el menu en el lado derecho de la pantalla */
+        ul.dreta{justify-content: flex-end;}
+
+        /* ponemos todos los espacios del mismo tamaño */
+        .igual li {flex:1 ;}
+        /* ponemos los espacios proporcionalmente a la cantidad de texto que hay */
+        .proporcional li{flex:auto;}
+    }
+    </style>
+
+</head>
+<body>
+    <header>
+        <nav>
+            <ul class="esquerra">
+                <li><a>1-Index</a></li>
+                <li><a>2-Qui som</a></li>
+                <li><a>3-Serveis</a></li>
+                <li><a>4-Contacte</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="centre">
+                <li><a>1-Index</a></li>
+                <li><a>2-Qui som</a></li>
+                <li><a>3-Serveis</a></li>
+                <li><a>4-Contacte</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="dreta">
+                <li><a>1-Index</a></li>
+                <li><a>2-Qui som</a></li>
+                <li><a>3-Serveis</a></li>
+                <li><a>4-Contacte</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="igual">
+                <li><a>1-Index</a></li>
+                <li><a>2-Qui som</a></li>
+                <li><a>3-Serveis</a></li>
+                <li><a>4-Contacte</a></li>
+            </ul>
+        </nav>
+
+        <nav>
+            <ul class="proporcional">
+                <li><a>1-Index</a></li>
+                <li><a>2-Qui som</a></li>
+                <li><a>3-Serveis</a></li>
+                <li><a>4-Contacte</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

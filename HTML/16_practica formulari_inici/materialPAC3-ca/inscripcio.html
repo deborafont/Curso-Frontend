@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inscripció</title>
+</head>
+<body class="inscripcio">
+
+    <header class="cabecera">
+        <img src="" alt="">
+        <ul>
+            <li><a href="inici.html">Inici</a></li>
+            <li><a href="talles.html">Talles</a></li>
+            <li><a href="inscripcio.html">Inscripció</a></li>
+        </ul>
+    </header>
+
+    <main>
+    <section>
+        <h1>Inscripció al club</h1>
+        <p>Omple el següent formulari per inscriure't al club</p>
+    </section>
+
+    <fieldset class="datos-personales">
+            <legend>Datos personales</legend>
+        <form>
+            <p><label for="nombre">Nombre</label></p>
+            <input type="text" id="nombre" placeholder="Escribe tu nombre" required/>
+    
+            <p><label for="apellidos">Apellidos</label></p>
+            <input type="text" id="apellidos" placeholder="Escribe tu nombre" required/>
+        
+            <p><label for="mail">Correo</label></p>
+            <input type="email" id="mail" placeholder="Escribe tu Email" required/>
+            
+            <p><label for="dni">DNI</label></p>
+            <input type="text" id="dni" placeholder="DNI" class="form-control" size="10"  maxlength="9" name="nif" pattern="(([X-Z]{1})([-]?)(\d{7})([-]?)([A-Z]{1}))|((\d{8})([-]?)([A-Z]{1}))" title="Introduzca el dni" required/>
+    
+            <p><label for="fecha">Fecha de nacimiento</label></p>
+            <input type="date" id="fecha" name="bday" required/>
+    
+            <p><label for="estudios">Área de estudios</label></p>
+            <select multiple name="estudios">
+                <option value="arts i Humanitats">Arts i Humanitats</option>
+                <option value="ciencies de la salut">Ciències de la salut</option>
+                <option value="comunicacio i informacio">Comunicació i informació</option>
+                <option value="dret i ciencies politiques">Dret i ciències polítiques</option>
+                <option value="disseny, creacio i multimedia">Disseny, creació i multimèdia</option>
+                <option value="economia i empresa">Economia i empresa</option>
+                <option value="informatica, multimedia i telecomunicacio">Informàtica, multimèdia i telecomunicació</option>
+            </select>
+        </fieldset>
+    
+        <fieldset class="direccion">
+            <legend>Dirección</legend>
+    
+            <p><label for="calle">Calle y número</label></p>
+            <input type="number" id="calle" placeholder="Calle y número" required/>
+    
+            <p><label for="ciudad">Ciudad</label></p>
+            <input type="text" id="ciudad" placeholder="Ciudad" required/>
+        
+            <p><label for="provinvia">Provincia</label></p>
+            <input type="text" id="provincia" placeholder="Provincia" required/>
+            
+            <p><label for="C.Postal">C.Postal</label></p>
+            <input type="number" id="dni" placeholder="C.Postal" required/>
+    
+            <p><label for="pais">País</label></p>
+            <select multiple name="pais">
+                <option name="pais" value="arts i Humanitats">Arts i Humanitats</option>
+                <option name="pais" value="ciencies de la salut">Ciències de la salut</option>
+                <option name="pais" value="comunicacio i informacio">Comunicació i informació</option>
+                <option name="pais" value="dret i ciencies politiques">Dret i ciències polítiques</option>
+                <option name="pais" value="disseny, creacio i multimedia">Disseny, creació i multimèdia</option>
+                <option name="pais" value="economia i empresa">Economia i empresa</option>
+                <option name="pais" value="informatica, multimedia i telecomunicacio">Informàtica, multimèdia i telecomunicació</option>
+            </select>
+        </fieldset>
+    
+        <fieldset class="datos-pago">
+            <legend>Datos de pago</legend>
+    
+            <p><label for="forma pago">Forma de pago</label></p>
+                <label><input type="radio" name="forma pago" value="semestral" checked>Semestral</label>
+                <label><input type="radio" name="forma pago" value="anual" checked>Anual</label>
+         
+            <p><label for="metodo pago">Método de pago</label></p>        
+                <label><input type="radio" name="metodo pago" value="transferencia" checked>Transferencia</label>
+                <label><input type="radio" name="metodo pago" value="tarjeta credito" checked>Tarjeta de crédito</label>
+                <label><input type="radio" name="metodo pago" value="paypal" checked>Paypal</label>
+                
+            <p><label for="talla camiseta">Selecciona la talla de tu camiseta</label></p>
+    
+            <select multiple name="talla camiseta">
+                    <option name="talla camiseta" value="s">S</option>
+                    <option name="talla camiseta" value="m">M</option>
+                    <option name="talla camiseta" value="l">L</option>
+                    <option name="talla camiseta" value="xl">XL</option>
+                    <option name="talla camiseta" value="xxl">XXL</option>
+            </select>  
+                 
+    
+        </fieldset>
+        </form>
+    </main>
+
+    <footer>
+        <p>PAC3 Llenguatges i estàndards web, 2018. Nom autor</p>
+        <p>Crèdits:<a href="https://unsplash.com/@huckster">TomaszWoźniak</a></p>
+    </footer>

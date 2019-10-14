@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!-- propiedad dir (direction de lectura). De izquierda a derecha (ltr, es el predeterminado). De derecha a izquierda (rtl). -->
+<html dir="ltr" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Align-items</title>
+
+    <style>
+        /* aplicamos inline-flex en el padre "main" para que los elementos se posicionen uno al lado del otro */
+        /* main{display: inline-flex;} */
+
+        /* aplicamos flex en el display y en flex-direction la direccion que quremos que haga el flex. Opciones (Row es por defecto, row-reverse de izquierda a derecha, colum en columna el primer item arriba, column-reverse en columna el primer item bajo */
+        /* main{ 
+            display: flex;
+            flex-direction: row;
+            } */
+
+            /* cuando hacemos mas pequeña la pantalla los elementos tienen el mismo tamaño y posiciona el 3 abajo si ya no cabe. Y nowrap es justo lo contrario. Cuando hacemos mas pequeña la pantalla en no baja ningun elemento, les cambia el tamaño para que sigan todo en el primer fila */
+
+            /* main{ 
+                display: flex;
+                flex-wrap: nowrap;
+            }  */
+
+            main{ 
+            background-color: grey;
+            display: flex;
+            flex-wrap: nowrap;
+            height: 1000px;
+            /* redistribuir los elemntos horizontalmente */
+            justify-content: space-evenly;
+            /* redistribuir los elemntos horizontalmente. Stretch es por defecto. */
+            /* align-items:baseline ; */
+            } 
+
+        body{
+            padding: 20px;
+            height: 600px;
+        }
+
+        section{
+            padding: 20px;
+            width: 100px;
+            background-color: orange;
+            border:1px black solid;
+        }
+
+        .item1{
+            font-size: 16px;
+            justify-items: flex-start;
+        }
+
+        .item2{
+            font-size: 26px;
+            justify-items: center;
+        }
+
+        .item3{
+            font-size: 66px;
+            justify-items: flex-end;
+        }
+
+        .item4{
+            font-size: 56px;
+            justify-items: flex-start;
+        }
+
+        .item5{
+            font-size: 46px;
+            justify-items: center;
+        }
+    
+        .item6{
+            font-size: 36px;
+            justify-items: flex-end;
+        }
+    </style>
+</head>
+
+<body>   
+    <main>
+        <section class="item1">
+            Flex Item 1
+        </section>
+    
+        <section class="item2">
+            Flex Item 2
+        </section>
+    
+        <section class="item3">
+            Flex Item 3
+        </section>
+
+        <section class="item4">
+            Flex Item 4
+        </section>
+    
+        <section class="item5">
+            Flex Item 5
+        </section>
+    
+        <section class="item6">
+            Flex Item 6
+        </section>
+    </main>
+</body>
+</html>

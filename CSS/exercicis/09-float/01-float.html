@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Float</title>
+
+    <style>
+
+    /* 03esto es un contenedor que contiene las cajas que esten flotando. Con el overflow en auto */
+    .contenidor{
+        background-color: gold;
+        overflow: auto;
+        /* ponemos margenes en los contenedores de los lados poniendole un padding de la izquierda*/
+        padding: 0 0 0 2%;
+    }
+    div{
+        outline:1px solid red;
+    }
+    /*01 flotando uno al lado del otro(contenedores). Hay que ponerle una anchura porque los elementos de bloque sino cogen el 100%.*/
+    .flotat{
+        float:left;
+        width:32%;
+        height: 400px;
+        padding: 20px;
+        /* 02 escogemos el punto de partida a la hora de que la imagen tenga un tamaño le pongamos el border o padding que sea. En este caso partiremos del border. Es decir si decimos que la caja tiene 500px seran desde el borde para dentro. si añadimos padding no augmentara el borde que siempre sera 500px */
+        box-sizing:border-box;
+    }
+    /* ponemos un pequeño margen entre las cajas de los lados y la del medio */
+    .flotat:nth-child(2){
+        margin: 0 1%;
+    }
+    </style>
+</head>
+<body>
+
+    <h1>Float</h1>
+        <div class="contenidor">
+
+            <div class="flotat">
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cumque facere repellendus culpa, expedita nulla perferendis quam, ipsum aut, voluptas obcaecati sunt vitae voluptatibus earum omnis quos? Maxime alias reiciendis quaerat?</p>
+
+        </div><div class="flotat">
+
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quis in officia modi amet dolores eveniet unde. Facere laboriosam molestias debitis similique, delectus quos asperiores sequi, sapiente nihil voluptate, voluptatibus harum.</p>
+
+        </div><div class="flotat">
+
+            <p>Caixa flotant</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro sit, dignissimos molestias quod modi saepe excepturi quam minus soluta quasi repudiandae repellat harum eius dolores, aperiam dicta pariatur quis. Optio.</p>
+        </div>
+
+</body>
+</html>

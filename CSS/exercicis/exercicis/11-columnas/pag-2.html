@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" />
+    <title>Maquetacion libro</title>
+    <style>
+    
+        /* -------------------------------ESTRUCTURA------------------------------------- */
+        main{
+            max-width: 1200px;
+            padding: 1rem; 
+            margin: 0 auto;
+        }
+    
+        h1, p, img, section{padding: 1rem}
+
+        .galeria{
+            margin: 0 auto;
+            width: 90vmin;
+            height: 90vmin;
+            display: grid;
+            grid-template-columns: repeat(2, fr);
+            grid-template-rows: repeat(5, fr);
+        }
+
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        img:nth-last-of-type(1){grid-area: 1/1/4/2; }
+        img:nth-last-of-type(2){grid-area: 1/2/3/3; }
+        img:nth-last-of-type(3){grid-area: 4/1/6/2; }
+        img:nth-last-of-type(4){grid-area: 3/2/6/3; }
+
+        .info-foto{
+            column-count: 2;
+            column-gap: 40px;
+        }
+    
+        /* -------------------------------TIPOFRAFIA------------------------------------- */
+    
+        html, h2{font-size: 1.2rem }
+        body{font-family: Arial, Helvetica, sans-serif}
+        h1{text-align: center; font-size: 1.5rem;}
+        p{text-align: justify;}
+        
+        /* -----------------------------------ESTETICA--------------------------------- */
+    
+        section:nth-child(1){
+            border-top: 8px solid rgb(43, 63, 43);
+        }
+    
+        </style>
+
+</head>
+<body>
+    
+    <main>
+
+        <section>
+
+            <h1>Kike una pregunta</h1>
+
+            <section class="galeria">
+                <img src="astronaut-4106766_640.jpg" alt="">
+
+                <img src="orion-nebula-11107_640.jpg" alt="">
+    
+                <img src="planets-1497200_640.jpg" alt="">
+    
+                <img src="space-11099_640.jpg" alt="">
+            </section >
+
+            <section class="info-foto">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum iste, nihil iusto sed harum possimus asperiores nulla labore blanditiis quia pariatur sequi magnam, illo itaque quidem culpa veritatis accusantium?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum iste, nihil iusto sed harum possimus asperiores nulla labore blanditiis quia pariatur sequi magnam, illo itaque quidem culpa veritatis accusantium?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum iste, nihil iusto sed harum possimus asperiores nulla labore blanditiis quia pariatur sequi magnam, illo itaque quidem culpa veritatis accusantium?</p>
+
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora voluptatum iste, nihil iusto sed harum possimus asperiores nulla labore blanditiis quia pariatur sequi magnam, illo itaque quidem culpa veritatis accusantium?</p>
+            </section>
+
+        </section>
+    </main>
+</body>
+</html>

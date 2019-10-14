@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Position cordenadas</title>
+
+    <style>
+        body{
+            margin: 0;
+
+        }
+        .container{
+            background-color: pink;
+            width: 100%;
+            height: 100vh;
+            margin: auto;
+            /* para poder posicionar um hijo en un padre primero tenemos que posicionar al padre */
+            position: relative;
+            border: 1px solid black;
+            box-sizing: border-box;
+        }
+        /* para poder centrar bien el texto lo que hacemos es poner su anchura en 100% y alineamos el texto */
+        .nord{
+            position: absolute;
+            /* no hace falta ponerle top ni left porque por defecto su valor es 0 */
+            /* top: 0;
+            left:0; */
+            width: 100%;
+            text-align: center
+        }
+        .nord-est{
+            position: absolute;
+            right: 0;
+        }
+        .est{
+            position: absolute;
+            top:50%;
+            right: 0;
+        }
+        .sud-est{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+        }
+        .sud{
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            text-align: center;
+        }
+        .sud-oest{
+            position: absolute;
+            bottom: 0;
+            
+        }
+        .oest{
+            position: absolute;
+            top: 50%;
+            
+        }
+        .nord-oest{
+            position: absolute;
+        
+        }
+        .centre{
+            position: absolute;
+            top: 50%;
+            width: 100%;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    
+    <div class="container">
+        <div class="nord">Dalt centre</div>
+        <div class="nord-est">Dalt dreta</div>
+        <div class="est">Mig dreta</div>
+        <div class="sud-est">Baix dreta</div>
+        <div class="sud">Baix centre</div>
+        <div class="sud-oest">Baix esquerra</div>
+        <div class="oest">Mig esquerra</div>
+        <div class="nord-oest">Dalt esquerra</div>
+        <div class="centre">Mig</div>
+</body>
+</html>

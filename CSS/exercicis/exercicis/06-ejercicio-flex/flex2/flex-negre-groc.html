@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Felx negre groc</title>
+
+    <style>
+        main{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .negre{
+            background-color: black;
+            color:yellow;
+            height: 50%;
+            /* display flex para el container que contiene el paragrafo "negre" */
+            display: flex
+        }
+
+        .groc{
+            text-align: center;
+            background-color: yellow;
+            height:  50%;
+        }
+
+        .negre p{
+            text-transform: uppercase;
+            font-size: 3rem;
+            /* posicionamosla palabra "negre" con los margenes */
+            margin: auto auto 0 auto;
+        }
+
+        .groc p{
+            text-transform: uppercase;
+            font-size: 3rem;
+            margin-top: 0;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+
+        <div class="negre">
+            <p>Negre</p>
+        </div>
+
+        <div class="groc">
+            <p>Groc</p>
+        </div>
+
+    </main>
+</body>
+
+</html>

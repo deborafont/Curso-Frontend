@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        /* un estandar que tiene que estar en todos las paginas */
+    html{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 18px;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    h1{ font-size: 3rem;}
+    h2{ font-size: 2rem;}
+    P{ font-size: 1rem;}
+
+
+
+    /* --------------------------ESTETICA------------------------------ */
+   
+    nav{
+        padding:1rem;
+        /* text-align:center; */
+    }
+
+    /* hacemos block a los enlaces para que toda la zona "li" sea clicable */
+    nav li a{
+        padding: .5rem 1rem;
+        display:block;
+    }
+
+    /* como empezamos por mobil first las opciones del menu se han de ver en columna */
+    nav ul{
+        background: #333;
+        display: flex;
+        flex-direction: column;
+    }
+    nav li:last-child{
+        border-right: 2px orange solid;
+    }
+
+    nav li:first-child{
+        border-left: 2px orange solid;
+    }
+    nav li{
+        border: 1px orange solid;
+        list-style: none;
+    }
+
+    nav li a{
+        color:white;
+        text-decoration: none;
+    }
+
+    nav li a:hover{
+        background: orange;
+        color: white;
+    }
+
+    input{
+        display: none;
+    }
+
+    #page-nav label {
+        display: inline-block;
+        color: #fff;
+        background-color: #333;
+        font-style: normal;
+        font-size: 1.2em;
+        padding: 10px;
+    }
+    
+    /* mientras no cliquemos a la hamburguesa del menu las opciones no son visibles */
+    #page-nav ul {
+        display: none;
+        width: 100%;
+    
+    }
+
+    /* cuando clicamos a la imagen menu salen las opciones del menu. Una vez clicado se quedara clicado y con el menu abierto, cuando hagamos mas grande la pantall. Asi que en el mediaqueries le decimos que pase a row este clicado o no */
+    #page-nav input:checked ~ ul {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* cuando la pantalla es de movil el menu se pone en en vertical  */
+    @media (min-width: 750px) {
+
+        #page-nav label, #hamburguer{
+            display: none;
+        }
+
+        /* Aqui le decimos que el menu, qu pase lo que pase, cuando hagamos la pantalla mas grande que la de movil las opciones salgan una al lado de la otra y no en column */
+        #page-nav input:checked ~ ul {
+        display: flex;
+        flex-direction: row;
+        }
+
+        /* ponemos todos los espacios de los elementos del menu del mismo tamaño */
+        .menu li {
+            flex-grow:1 ;}
+    }
+
+    </style>
+
+</head>
+<body>
+
+        <nav id="page-nav">
+                <!-- [THE HAMBURGER] -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+          
+                <!-- [MENU ITEMS] -->
+            <ul class="menu">
+                <li><a href="">Index</a></li>
+                <li><a href="">Qui som</a></li>
+                <li><a href="">Serveis</a></li>
+                <li><a href="">contactes</a></li>
+            </ul>
+        </nav>
+</body>

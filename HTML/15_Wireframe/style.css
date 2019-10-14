@@ -1,0 +1,98 @@
+/* ----------------reset----------------- */
+*{
+    /* reset per els navegadors */
+    margin:0;
+    padding:0;
+    /* que el padding no tingui en compte el tamañ de la caixa per tots el navegadors. El navegador no tindra en compte el padding */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+/* -------------estructura----------- */
+main{
+    width: 1000px;
+    background-color: white;
+    margin:20px auto;
+}
+header{
+    width: 1000px;
+    height: 120px;
+    position: relative;
+}
+.logo{
+    width: 200px;
+    height: 60px;
+    position: absolute;
+    margin:10px;
+    
+}
+.logos-compartir{
+    width: 141px;
+    height: 41px; 
+    margin:10px;
+    position:absolute;
+    right: 0;
+    display: inline-block;
+}
+.navegador{
+    width: 1000px;
+    height: 48px;
+    margin: 20px 0;
+    text-align: center;
+    font-size: 0px;
+}
+.navegador div{
+    display: inline-block;
+    width: 198px;
+    height: 48px;
+    font-size: 16px;
+    margin:0 1px;
+}
+.articulos{
+    width: 1000px;
+    height: 191px;
+    margin:20px 0;
+}
+article{
+    display:inline-block;
+    width: 10px;
+    height: 191px;
+    margin:0 9px;
+}
+section{
+    width: 600px;
+    height: 450px;
+}
+aside{
+    width: 200px;
+    height: 450px;
+}
+footer{
+    width: 1000px;
+    height: 70px;
+}
+
+/* ----------------estetica---------------- */
+body{
+    background-color: white;
+}
+header{
+background-color: black;
+}
+.navegador div{
+    background-color: grey;
+}
+article{
+    background-color: grey;
+}
+/*
+section{
+    background-color: rgb(80, 76, 76);
+}
+aside{
+    background-color: grey;
+}
+footer{
+    background-color: rgb(80, 76, 76); 
+} */

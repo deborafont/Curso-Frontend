@@ -1,0 +1,77 @@
+/*-------------------------RESET CSS---------------------*/
+
+
+
+/*-----------------------ESTRUCTURA--------------------*/
+
+body {
+    margin: 0;
+    padding: 0;
+    color: #000000;
+    font-family: Verdana, Geneva, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;	
+}
+ h1, nav{
+    text-align: center;
+ }
+
+  header p{
+     text-align: right;
+ }
+body{
+    width: 90%;
+    max-width: 800px;
+    margin: 50px auto; /*centramos el contenido horitzontalmente*/
+    text-align: left;
+}
+p {
+    text-align: justify
+}
+article {
+    border-top-style: solid;
+    border-bottom-style: solid;
+  }
+
+/*-------------------TIPOGRAFIA--------------------------*/
+span{
+    font-style: italic
+}
+header p:nth-child(3){
+    font-size: .9rem;
+}
+h1{
+    text-decoration: underline;
+}
+/*----------------------ESTETICA-----------------------*/
+code{
+    color: rgb(32, 105, 241);
+}
+
+q{
+    color:rgb(3, 172, 3);
+}
+
+section:nth-child(1) p:nth-child(3), header p{
+    color: gray
+}
+
+h1, h2{
+    color: fuchsia
+}
+
+a{
+    color: red;
+
+}
+article {
+    border-top-color: fuchsia;
+    border-bottom-color: fuchsia;
+  }
+q::before, q::after{
+    content:" ";
+}
+
+:target{
+    background-color: orange;
+}

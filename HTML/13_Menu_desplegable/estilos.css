@@ -1,0 +1,78 @@
+*{
+    /* reset per els navegadors */
+    margin:0;
+    padding:0;
+    /* que el padding no tingui en compte el tamañ de la caixa per tots el navegadors. El navegador no tindra en compte el padding */
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing:border-box;
+    -webkit-box-sizing: border-box;
+}
+
+body{
+    background-color: #313d52;
+
+}
+
+/* caracteristicas de la caixa */
+.navegacion{
+    width: 1000px;
+    background-color: white;
+    margin:30px auto;
+}
+
+ul.menu, .submenu{
+    /* treiem els puntets de la llista(la decoracio) */
+    list-style: none;
+}
+
+.menu>li{
+    /* posicionem els elements en linia un al costat de l'altre, nomes als fills no al nets perque el que farem despres es un desplegable i ens interesa que el segons <li> estiguin un a sobre de l'altre (els <li> principals) */
+    display: inline-block;
+    /* 02 volem posar el pare com a referencia del seu fill que es el submenu */
+    position: relative;
+
+
+}
+
+.menu>li a{
+    color:#353535;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    padding:15px 20px;
+    /* per que respongui a la ordre de padding de 15px li he de dir a els hipervincles que es diposicionin en inline-block perque anteriorment he posat el inline-block els <li> no els hipervincles */
+    display: inline-block;
+}
+
+/* volem dirigir el punter a els primers hipervincles de la primera <li> de la class menu */
+.menu>li>a:hover{
+    color:#ce7d35;
+    background-color: bisque;
+}
+
+/* posem en block els elements del submenu */
+.submenu>li{
+    display: block;
+    background-color: #333;
+}
+.submenu{
+    /* el seu posicionament esta referenciat amb el seu pare. abans la seva referencia era el navegador, ara la seva referencia es la del seu pare (position:absolute) */
+    position: absolute;
+    width: 100%;
+
+}
+
+/* tots els hipervincles que estiguin en una <li> amb classe .submenu */
+.submenu li a{
+    
+    color:#fff;
+    padding:15px;  
+}
+
+/* el mateix que (.submenu li a) pero al seu hover */
+.submenu li a:hover{
+    background-color: aqua;
+    /* 01 posem l'amplada 100% y canviem la position de els <li> del menu perque s'adapti al seu pare */
+    width: 100%;
+   
+}
